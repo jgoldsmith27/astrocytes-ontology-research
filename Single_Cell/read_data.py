@@ -1,32 +1,31 @@
-import anndata as ad
+import scanpy as sc
 import pandas as pd
+import numpy as np
 
-def read_data(file_path: str) -> pd.DataFrame:
-    """
-    Reads an h5ad file, groups data by cell type, and returns a DataFrame 
-    with the average gene expression for each cell type.
-
-    Args:
-        file_path (str): Path to the h5ad file.
-
-    Returns:
-        pd.DataFrame: DataFrame where rows are cell types, columns are genes, 
-                      and values are average expression levels for each gene in the cell type.
-    """
-    # Load h5ad file
-    adata = ad.read_h5ad(file_path)
-
-    # Ensure 'celltype' column exists
-    if "celltype" not in adata.obs:
-        raise ValueError("No 'celltype' column found in metadata. Ensure your dataset has cell type annotations.")
-
-    # Convert data matrix to DataFrame
-    df = pd.DataFrame(adata.X.toarray(), index=adata.obs_names, columns=adata.var_names)
-
-    # Attach cell type labels
-    df["celltype"] = adata.obs["celltype"].values
-
-    # Group by cell type and compute the mean expression per gene
-    avg_df = df.groupby("celltype").mean()
-
-    return avg_df
+def read_data(file_path):
+    """Read h5ad file and return average expression for astrocyte subtypes only"""
+    print("🔍 Reading h5ad file and filtering for astrocyte subtypes...")
+    adata = sc.read_h5ad(file_path)
+    
+    # Filter for astrocyte cell types only
+    astrocyte_types = [ct for ct in adata.obs['celltype'].unique() if 'strocyte' in ct]
+    
+    if len(astrocyte_types) == 0:
+        print("⚠️ No astrocyte types found! Using first three cell types as a fallback.")
+        astrocyte_types = list(adata.obs['celltype'].unique()[:3])
+    
+    print(f"🧠 Found astrocyte types: {astrocyte_types}")
+    
+    # Calculate average expression per astrocyte type
+    avg_df = pd.DataFrame()
+    for cell_type in astrocyte_types:
+        cell_mask = adata.obs['celltype'] == cell_type
+        if sum(cell_mask) > 0:  # Only process if cells exist for this type
+            avg_expression = adata[cell_mask].X.mean(axis=0)
+            if hasattr(avg_expression, 'A1'):
+                avg_df[cell_type] = avg_expression.A1
+            else:
+                avg_df[cell_type] = avg_expression
+    
+    avg_df.index = adata.var_names
+    return avg_df.T  # Transpose to have cell types as rows

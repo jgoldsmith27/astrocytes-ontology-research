@@ -1,0 +1,25 @@
+# Ignore large dataset files
+Single_Cell/single_cell_data_cleaned.h5ad
+coexpression_results.h5ad
+
+# Ignore Python cache and temporary files
+__pycache__/
+*.pyc
+*.pyo
+*.log
+*.tmp
+
+# Ignore environment files
+.env
+venv/
+*.venv
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore large files tracked by Git LFS (optional)
+*.h5ad
