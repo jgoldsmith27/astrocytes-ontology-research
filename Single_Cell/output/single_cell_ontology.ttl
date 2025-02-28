@@ -1,0 +1,2318 @@
+@prefix sc: <http://example.org/single-cell#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+sc:Expression_100_1 sc:belongsToCell sc:Cell_100 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.903133e+00 .
+
+sc:Expression_100_2 sc:belongsToCell sc:Cell_100 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 2.307581e+00 .
+
+sc:Expression_100_3 sc:belongsToCell sc:Cell_100 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 6.029865e-01 .
+
+sc:Expression_100_4 sc:belongsToCell sc:Cell_100 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 1.975718e+00 .
+
+sc:Expression_100_5 sc:belongsToCell sc:Cell_100 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 2.554178e+00 .
+
+sc:Expression_10_1 sc:belongsToCell sc:Cell_10 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.141777e+00 .
+
+sc:Expression_10_2 sc:belongsToCell sc:Cell_10 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.017179e+00 .
+
+sc:Expression_10_3 sc:belongsToCell sc:Cell_10 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 2.968455e+00 .
+
+sc:Expression_10_4 sc:belongsToCell sc:Cell_10 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 1.875273e+00 .
+
+sc:Expression_10_5 sc:belongsToCell sc:Cell_10 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.993588e+00 .
+
+sc:Expression_11_1 sc:belongsToCell sc:Cell_11 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.378661e+00 .
+
+sc:Expression_11_2 sc:belongsToCell sc:Cell_11 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 4.718478e-01 .
+
+sc:Expression_11_3 sc:belongsToCell sc:Cell_11 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.638657e+00 .
+
+sc:Expression_11_4 sc:belongsToCell sc:Cell_11 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.305823e+00 .
+
+sc:Expression_11_5 sc:belongsToCell sc:Cell_11 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 2.440526e-02 .
+
+sc:Expression_12_1 sc:belongsToCell sc:Cell_12 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.771299e+00 .
+
+sc:Expression_12_2 sc:belongsToCell sc:Cell_12 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.514613e+00 .
+
+sc:Expression_12_3 sc:belongsToCell sc:Cell_12 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 2.939931e+00 .
+
+sc:Expression_12_4 sc:belongsToCell sc:Cell_12 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 4.211842e-02 .
+
+sc:Expression_12_5 sc:belongsToCell sc:Cell_12 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 7.865525e-01 .
+
+sc:Expression_13_1 sc:belongsToCell sc:Cell_13 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.32107e+00 .
+
+sc:Expression_13_2 sc:belongsToCell sc:Cell_13 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 2.6841e+00 .
+
+sc:Expression_13_3 sc:belongsToCell sc:Cell_13 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.656141e+00 .
+
+sc:Expression_13_4 sc:belongsToCell sc:Cell_13 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 5.115483e-02 .
+
+sc:Expression_13_5 sc:belongsToCell sc:Cell_13 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 4.391511e-01 .
+
+sc:Expression_14_1 sc:belongsToCell sc:Cell_14 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.973172e+00 .
+
+sc:Expression_14_2 sc:belongsToCell sc:Cell_14 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 2.591074e+00 .
+
+sc:Expression_14_3 sc:belongsToCell sc:Cell_14 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 2.674903e+00 .
+
+sc:Expression_14_4 sc:belongsToCell sc:Cell_14 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.334991e+00 .
+
+sc:Expression_14_5 sc:belongsToCell sc:Cell_14 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.858355e+00 .
+
+sc:Expression_15_1 sc:belongsToCell sc:Cell_15 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.883016e-01 .
+
+sc:Expression_15_2 sc:belongsToCell sc:Cell_15 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 2.607289e+00 .
+
+sc:Expression_15_3 sc:belongsToCell sc:Cell_15 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.634084e+00 .
+
+sc:Expression_15_4 sc:belongsToCell sc:Cell_15 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.087535e+00 .
+
+sc:Expression_15_5 sc:belongsToCell sc:Cell_15 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 2.206546e+00 .
+
+sc:Expression_16_1 sc:belongsToCell sc:Cell_16 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 3.657519e-01 .
+
+sc:Expression_16_2 sc:belongsToCell sc:Cell_16 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 2.079549e+00 .
+
+sc:Expression_16_3 sc:belongsToCell sc:Cell_16 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 2.656281e+00 .
+
+sc:Expression_16_4 sc:belongsToCell sc:Cell_16 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 1.124075e+00 .
+
+sc:Expression_16_5 sc:belongsToCell sc:Cell_16 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 2.577881e+00 .
+
+sc:Expression_17_1 sc:belongsToCell sc:Cell_17 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.580108e+00 .
+
+sc:Expression_17_2 sc:belongsToCell sc:Cell_17 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.62079e+00 .
+
+sc:Expression_17_3 sc:belongsToCell sc:Cell_17 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 2.122122e+00 .
+
+sc:Expression_17_4 sc:belongsToCell sc:Cell_17 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.842968e+00 .
+
+sc:Expression_17_5 sc:belongsToCell sc:Cell_17 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 6.340026e-01 .
+
+sc:Expression_18_1 sc:belongsToCell sc:Cell_18 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 4.101963e-01 .
+
+sc:Expression_18_2 sc:belongsToCell sc:Cell_18 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 9.499963e-01 .
+
+sc:Expression_18_3 sc:belongsToCell sc:Cell_18 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.729298e+00 .
+
+sc:Expression_18_4 sc:belongsToCell sc:Cell_18 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 1.115051e+00 .
+
+sc:Expression_18_5 sc:belongsToCell sc:Cell_18 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 2.142632e+00 .
+
+sc:Expression_19_1 sc:belongsToCell sc:Cell_19 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 7.49197e-01 .
+
+sc:Expression_19_2 sc:belongsToCell sc:Cell_19 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.832688e+00 .
+
+sc:Expression_19_3 sc:belongsToCell sc:Cell_19 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 3.402241e-03 .
+
+sc:Expression_19_4 sc:belongsToCell sc:Cell_19 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.164706e+00 .
+
+sc:Expression_19_5 sc:belongsToCell sc:Cell_19 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.463061e+00 .
+
+sc:Expression_1_1 sc:belongsToCell sc:Cell_1 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 4.777611e-01 .
+
+sc:Expression_1_2 sc:belongsToCell sc:Cell_1 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 2.57652e+00 .
+
+sc:Expression_1_3 sc:belongsToCell sc:Cell_1 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.78999e+00 .
+
+sc:Expression_1_4 sc:belongsToCell sc:Cell_1 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.884996e+00 .
+
+sc:Expression_1_5 sc:belongsToCell sc:Cell_1 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 2.376161e+00 .
+
+sc:Expression_20_1 sc:belongsToCell sc:Cell_20 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.890164e+00 .
+
+sc:Expression_20_2 sc:belongsToCell sc:Cell_20 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 2.99557e+00 .
+
+sc:Expression_20_3 sc:belongsToCell sc:Cell_20 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.842615e+00 .
+
+sc:Expression_20_4 sc:belongsToCell sc:Cell_20 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 1.834155e+00 .
+
+sc:Expression_20_5 sc:belongsToCell sc:Cell_20 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.481837e+00 .
+
+sc:Expression_21_1 sc:belongsToCell sc:Cell_21 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.44773e+00 .
+
+sc:Expression_21_2 sc:belongsToCell sc:Cell_21 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.041319e+00 .
+
+sc:Expression_21_3 sc:belongsToCell sc:Cell_21 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 2.126735e+00 .
+
+sc:Expression_21_4 sc:belongsToCell sc:Cell_21 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.203514e+00 .
+
+sc:Expression_21_5 sc:belongsToCell sc:Cell_21 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 2.600926e+00 .
+
+sc:Expression_22_1 sc:belongsToCell sc:Cell_22 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.284475e+00 .
+
+sc:Expression_22_2 sc:belongsToCell sc:Cell_22 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 8.186339e-01 .
+
+sc:Expression_22_3 sc:belongsToCell sc:Cell_22 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.407981e+00 .
+
+sc:Expression_22_4 sc:belongsToCell sc:Cell_22 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.699736e+00 .
+
+sc:Expression_22_5 sc:belongsToCell sc:Cell_22 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 2.101641e+00 .
+
+sc:Expression_23_1 sc:belongsToCell sc:Cell_23 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.828921e+00 .
+
+sc:Expression_23_2 sc:belongsToCell sc:Cell_23 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 4.317115e-01 .
+
+sc:Expression_23_3 sc:belongsToCell sc:Cell_23 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 2.587519e+00 .
+
+sc:Expression_23_4 sc:belongsToCell sc:Cell_23 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 1.515351e+00 .
+
+sc:Expression_23_5 sc:belongsToCell sc:Cell_23 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.507302e-01 .
+
+sc:Expression_24_1 sc:belongsToCell sc:Cell_24 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 6.612431e-02 .
+
+sc:Expression_24_2 sc:belongsToCell sc:Cell_24 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.193391e+00 .
+
+sc:Expression_24_3 sc:belongsToCell sc:Cell_24 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 8.00342e-01 .
+
+sc:Expression_24_4 sc:belongsToCell sc:Cell_24 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 6.774611e-01 .
+
+sc:Expression_24_5 sc:belongsToCell sc:Cell_24 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.314152e-01 .
+
+sc:Expression_25_1 sc:belongsToCell sc:Cell_25 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.932748e+00 .
+
+sc:Expression_25_2 sc:belongsToCell sc:Cell_25 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.918569e+00 .
+
+sc:Expression_25_3 sc:belongsToCell sc:Cell_25 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 4.879869e-01 .
+
+sc:Expression_25_4 sc:belongsToCell sc:Cell_25 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.871313e+00 .
+
+sc:Expression_25_5 sc:belongsToCell sc:Cell_25 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 2.786619e+00 .
+
+sc:Expression_26_1 sc:belongsToCell sc:Cell_26 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.952863e+00 .
+
+sc:Expression_26_2 sc:belongsToCell sc:Cell_26 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.492936e+00 .
+
+sc:Expression_26_3 sc:belongsToCell sc:Cell_26 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 5.114135e-01 .
+
+sc:Expression_26_4 sc:belongsToCell sc:Cell_26 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 1.714385e-01 .
+
+sc:Expression_26_5 sc:belongsToCell sc:Cell_26 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 2.938536e+00 .
+
+sc:Expression_27_1 sc:belongsToCell sc:Cell_27 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.548692e+00 .
+
+sc:Expression_27_2 sc:belongsToCell sc:Cell_27 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.502335e-01 .
+
+sc:Expression_27_3 sc:belongsToCell sc:Cell_27 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 2.426609e+00 .
+
+sc:Expression_27_4 sc:belongsToCell sc:Cell_27 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 3.554229e-01 .
+
+sc:Expression_27_5 sc:belongsToCell sc:Cell_27 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 2.484325e+00 .
+
+sc:Expression_28_1 sc:belongsToCell sc:Cell_28 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.230064e+00 .
+
+sc:Expression_28_2 sc:belongsToCell sc:Cell_28 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 6.358841e-01 .
+
+sc:Expression_28_3 sc:belongsToCell sc:Cell_28 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.734234e+00 .
+
+sc:Expression_28_4 sc:belongsToCell sc:Cell_28 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.939513e+00 .
+
+sc:Expression_28_5 sc:belongsToCell sc:Cell_28 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 5.137146e-01 .
+
+sc:Expression_29_1 sc:belongsToCell sc:Cell_29 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.192324e+00 .
+
+sc:Expression_29_2 sc:belongsToCell sc:Cell_29 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 6.948299e-01 .
+
+sc:Expression_29_3 sc:belongsToCell sc:Cell_29 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.782993e+00 .
+
+sc:Expression_29_4 sc:belongsToCell sc:Cell_29 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 8.926486e-01 .
+
+sc:Expression_29_5 sc:belongsToCell sc:Cell_29 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 7.207854e-01 .
+
+sc:Expression_2_1 sc:belongsToCell sc:Cell_2 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.50714e+00 .
+
+sc:Expression_2_2 sc:belongsToCell sc:Cell_2 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 2.099058e+00 .
+
+sc:Expression_2_3 sc:belongsToCell sc:Cell_2 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.342598e+00 .
+
+sc:Expression_2_4 sc:belongsToCell sc:Cell_2 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 9.947517e-01 .
+
+sc:Expression_2_5 sc:belongsToCell sc:Cell_2 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.93175e-01 .
+
+sc:Expression_30_1 sc:belongsToCell sc:Cell_30 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.287023e+00 .
+
+sc:Expression_30_2 sc:belongsToCell sc:Cell_30 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 2.867607e+00 .
+
+sc:Expression_30_3 sc:belongsToCell sc:Cell_30 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 2.024295e+00 .
+
+sc:Expression_30_4 sc:belongsToCell sc:Cell_30 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 1.585284e+00 .
+
+sc:Expression_30_5 sc:belongsToCell sc:Cell_30 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 2.386957e+00 .
+
+sc:Expression_31_1 sc:belongsToCell sc:Cell_31 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.7282e+00 .
+
+sc:Expression_31_2 sc:belongsToCell sc:Cell_31 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 8.258192e-01 .
+
+sc:Expression_31_3 sc:belongsToCell sc:Cell_31 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.001492e+00 .
+
+sc:Expression_31_4 sc:belongsToCell sc:Cell_31 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 6.232738e-01 .
+
+sc:Expression_31_5 sc:belongsToCell sc:Cell_31 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 8.86858e-01 .
+
+sc:Expression_32_1 sc:belongsToCell sc:Cell_32 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.128086e+00 .
+
+sc:Expression_32_2 sc:belongsToCell sc:Cell_32 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 2.532796e+00 .
+
+sc:Expression_32_3 sc:belongsToCell sc:Cell_32 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.591362e+00 .
+
+sc:Expression_32_4 sc:belongsToCell sc:Cell_32 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 3.664254e-01 .
+
+sc:Expression_32_5 sc:belongsToCell sc:Cell_32 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.197449e+00 .
+
+sc:Expression_33_1 sc:belongsToCell sc:Cell_33 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.926408e+00 .
+
+sc:Expression_33_2 sc:belongsToCell sc:Cell_33 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 8.903642e-01 .
+
+sc:Expression_33_3 sc:belongsToCell sc:Cell_33 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.718563e+00 .
+
+sc:Expression_33_4 sc:belongsToCell sc:Cell_33 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 8.83721e-01 .
+
+sc:Expression_33_5 sc:belongsToCell sc:Cell_33 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 2.430121e+00 .
+
+sc:Expression_34_1 sc:belongsToCell sc:Cell_34 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.655584e+00 .
+
+sc:Expression_34_2 sc:belongsToCell sc:Cell_34 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 2.375961e+00 .
+
+sc:Expression_34_3 sc:belongsToCell sc:Cell_34 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.913098e+00 .
+
+sc:Expression_34_4 sc:belongsToCell sc:Cell_34 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.957805e+00 .
+
+sc:Expression_34_5 sc:belongsToCell sc:Cell_34 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 5.429178e-01 .
+
+sc:Expression_35_1 sc:belongsToCell sc:Cell_35 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.239456e+00 .
+
+sc:Expression_35_2 sc:belongsToCell sc:Cell_35 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.089264e-01 .
+
+sc:Expression_35_3 sc:belongsToCell sc:Cell_35 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 9.649529e-01 .
+
+sc:Expression_35_4 sc:belongsToCell sc:Cell_35 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.659337e+00 .
+
+sc:Expression_35_5 sc:belongsToCell sc:Cell_35 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.268062e-01 .
+
+sc:Expression_36_1 sc:belongsToCell sc:Cell_36 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.032171e-01 .
+
+sc:Expression_36_2 sc:belongsToCell sc:Cell_36 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 2.216898e+00 .
+
+sc:Expression_36_3 sc:belongsToCell sc:Cell_36 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.712554e+00 .
+
+sc:Expression_36_4 sc:belongsToCell sc:Cell_36 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 1.73359e+00 .
+
+sc:Expression_36_5 sc:belongsToCell sc:Cell_36 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.796231e+00 .
+
+sc:Expression_37_1 sc:belongsToCell sc:Cell_37 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.836045e+00 .
+
+sc:Expression_37_2 sc:belongsToCell sc:Cell_37 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.312152e+00 .
+
+sc:Expression_37_3 sc:belongsToCell sc:Cell_37 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.080437e+00 .
+
+sc:Expression_37_4 sc:belongsToCell sc:Cell_37 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.44519e+00 .
+
+sc:Expression_37_5 sc:belongsToCell sc:Cell_37 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 2.889097e+00 .
+
+sc:Expression_38_1 sc:belongsToCell sc:Cell_38 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.840405e+00 .
+
+sc:Expression_38_2 sc:belongsToCell sc:Cell_38 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 2.358696e+00 .
+
+sc:Expression_38_3 sc:belongsToCell sc:Cell_38 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 9.263474e-01 .
+
+sc:Expression_38_4 sc:belongsToCell sc:Cell_38 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.391311e+00 .
+
+sc:Expression_38_5 sc:belongsToCell sc:Cell_38 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 2.181818e+00 .
+
+sc:Expression_39_1 sc:belongsToCell sc:Cell_39 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.849344e+00 .
+
+sc:Expression_39_2 sc:belongsToCell sc:Cell_39 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 8.613998e-02 .
+
+sc:Expression_39_3 sc:belongsToCell sc:Cell_39 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 2.640693e+00 .
+
+sc:Expression_39_4 sc:belongsToCell sc:Cell_39 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 1.509987e+00 .
+
+sc:Expression_39_5 sc:belongsToCell sc:Cell_39 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 2.640017e+00 .
+
+sc:Expression_3_1 sc:belongsToCell sc:Cell_3 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 6.133806e-01 .
+
+sc:Expression_3_2 sc:belongsToCell sc:Cell_3 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.826474e+00 .
+
+sc:Expression_3_3 sc:belongsToCell sc:Cell_3 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 2.298523e+00 .
+
+sc:Expression_3_4 sc:belongsToCell sc:Cell_3 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.451282e+00 .
+
+sc:Expression_3_5 sc:belongsToCell sc:Cell_3 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.474118e+00 .
+
+sc:Expression_40_1 sc:belongsToCell sc:Cell_40 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.604227e+00 .
+
+sc:Expression_40_2 sc:belongsToCell sc:Cell_40 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.567655e+00 .
+
+sc:Expression_40_3 sc:belongsToCell sc:Cell_40 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.381195e+00 .
+
+sc:Expression_40_4 sc:belongsToCell sc:Cell_40 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.832191e+00 .
+
+sc:Expression_40_5 sc:belongsToCell sc:Cell_40 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 6.635551e-01 .
+
+sc:Expression_41_1 sc:belongsToCell sc:Cell_41 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.070283e+00 .
+
+sc:Expression_41_2 sc:belongsToCell sc:Cell_41 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 2.39504e+00 .
+
+sc:Expression_41_3 sc:belongsToCell sc:Cell_41 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.415993e+00 .
+
+sc:Expression_41_4 sc:belongsToCell sc:Cell_41 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.98788e+00 .
+
+sc:Expression_41_5 sc:belongsToCell sc:Cell_41 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.468213e+00 .
+
+sc:Expression_42_1 sc:belongsToCell sc:Cell_42 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.079456e+00 .
+
+sc:Expression_42_2 sc:belongsToCell sc:Cell_42 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 2.277311e+00 .
+
+sc:Expression_42_3 sc:belongsToCell sc:Cell_42 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 6.742607e-01 .
+
+sc:Expression_42_4 sc:belongsToCell sc:Cell_42 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 1.811757e+00 .
+
+sc:Expression_42_5 sc:belongsToCell sc:Cell_42 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.581078e+00 .
+
+sc:Expression_43_1 sc:belongsToCell sc:Cell_43 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.321854e+00 .
+
+sc:Expression_43_2 sc:belongsToCell sc:Cell_43 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.501122e+00 .
+
+sc:Expression_43_3 sc:belongsToCell sc:Cell_43 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 2.097111e+00 .
+
+sc:Expression_43_4 sc:belongsToCell sc:Cell_43 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 9.483259e-01 .
+
+sc:Expression_43_5 sc:belongsToCell sc:Cell_43 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.121059e+00 .
+
+sc:Expression_44_1 sc:belongsToCell sc:Cell_44 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.411342e+00 .
+
+sc:Expression_44_2 sc:belongsToCell sc:Cell_44 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 5.131196e-01 .
+
+sc:Expression_44_3 sc:belongsToCell sc:Cell_44 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.999396e+00 .
+
+sc:Expression_44_4 sc:belongsToCell sc:Cell_44 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.656809e+00 .
+
+sc:Expression_44_5 sc:belongsToCell sc:Cell_44 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 4.792083e-01 .
+
+sc:Expression_45_1 sc:belongsToCell sc:Cell_45 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.111009e+00 .
+
+sc:Expression_45_2 sc:belongsToCell sc:Cell_45 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.830295e+00 .
+
+sc:Expression_45_3 sc:belongsToCell sc:Cell_45 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 8.681193e-01 .
+
+sc:Expression_45_4 sc:belongsToCell sc:Cell_45 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.171402e+00 .
+
+sc:Expression_45_5 sc:belongsToCell sc:Cell_45 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 5.238982e-01 .
+
+sc:Expression_46_1 sc:belongsToCell sc:Cell_46 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 8.539391e-01 .
+
+sc:Expression_46_2 sc:belongsToCell sc:Cell_46 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 2.652663e+00 .
+
+sc:Expression_46_3 sc:belongsToCell sc:Cell_46 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 3.180853e-01 .
+
+sc:Expression_46_4 sc:belongsToCell sc:Cell_46 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 4.11246e-01 .
+
+sc:Expression_46_5 sc:belongsToCell sc:Cell_46 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 2.09702e+00 .
+
+sc:Expression_47_1 sc:belongsToCell sc:Cell_47 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.462342e-01 .
+
+sc:Expression_47_2 sc:belongsToCell sc:Cell_47 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 2.772432e+00 .
+
+sc:Expression_47_3 sc:belongsToCell sc:Cell_47 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 2.287445e+00 .
+
+sc:Expression_47_4 sc:belongsToCell sc:Cell_47 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.146539e+00 .
+
+sc:Expression_47_5 sc:belongsToCell sc:Cell_47 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 3.470737e-02 .
+
+sc:Expression_48_1 sc:belongsToCell sc:Cell_48 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.887598e+00 .
+
+sc:Expression_48_2 sc:belongsToCell sc:Cell_48 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 3.523921e-01 .
+
+sc:Expression_48_3 sc:belongsToCell sc:Cell_48 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 5.924997e-01 .
+
+sc:Expression_48_4 sc:belongsToCell sc:Cell_48 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 5.55219e-01 .
+
+sc:Expression_48_5 sc:belongsToCell sc:Cell_48 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 2.504204e+00 .
+
+sc:Expression_49_1 sc:belongsToCell sc:Cell_49 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.750318e+00 .
+
+sc:Expression_49_2 sc:belongsToCell sc:Cell_49 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 7.039481e-01 .
+
+sc:Expression_49_3 sc:belongsToCell sc:Cell_49 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.952186e+00 .
+
+sc:Expression_49_4 sc:belongsToCell sc:Cell_49 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 1.540601e+00 .
+
+sc:Expression_49_5 sc:belongsToCell sc:Cell_49 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.335832e+00 .
+
+sc:Expression_4_1 sc:belongsToCell sc:Cell_4 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.29234e+00 .
+
+sc:Expression_4_2 sc:belongsToCell sc:Cell_4 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 6.160015e-01 .
+
+sc:Expression_4_3 sc:belongsToCell sc:Cell_4 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.714571e+00 .
+
+sc:Expression_4_4 sc:belongsToCell sc:Cell_4 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 3.999255e-01 .
+
+sc:Expression_4_5 sc:belongsToCell sc:Cell_4 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.516593e+00 .
+
+sc:Expression_50_1 sc:belongsToCell sc:Cell_50 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.368622e+00 .
+
+sc:Expression_50_2 sc:belongsToCell sc:Cell_50 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 2.673469e+00 .
+
+sc:Expression_50_3 sc:belongsToCell sc:Cell_50 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 2.205507e-01 .
+
+sc:Expression_50_4 sc:belongsToCell sc:Cell_50 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.234843e-01 .
+
+sc:Expression_50_5 sc:belongsToCell sc:Cell_50 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.990825e+00 .
+
+sc:Expression_51_1 sc:belongsToCell sc:Cell_51 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.364688e+00 .
+
+sc:Expression_51_2 sc:belongsToCell sc:Cell_51 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.595331e+00 .
+
+sc:Expression_51_3 sc:belongsToCell sc:Cell_51 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 4.596505e-01 .
+
+sc:Expression_51_4 sc:belongsToCell sc:Cell_51 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 1.612199e+00 .
+
+sc:Expression_51_5 sc:belongsToCell sc:Cell_51 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 2.713641e+00 .
+
+sc:Expression_52_1 sc:belongsToCell sc:Cell_52 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.202533e+00 .
+
+sc:Expression_52_2 sc:belongsToCell sc:Cell_52 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.982231e+00 .
+
+sc:Expression_52_3 sc:belongsToCell sc:Cell_52 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 4.938528e-01 .
+
+sc:Expression_52_4 sc:belongsToCell sc:Cell_52 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 1.09349e+00 .
+
+sc:Expression_52_5 sc:belongsToCell sc:Cell_52 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 2.199577e+00 .
+
+sc:Expression_53_1 sc:belongsToCell sc:Cell_53 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.370484e-01 .
+
+sc:Expression_53_2 sc:belongsToCell sc:Cell_53 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.597226e+00 .
+
+sc:Expression_53_3 sc:belongsToCell sc:Cell_53 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 9.496656e-01 .
+
+sc:Expression_53_4 sc:belongsToCell sc:Cell_53 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 1.893133e+00 .
+
+sc:Expression_53_5 sc:belongsToCell sc:Cell_53 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.165689e-01 .
+
+sc:Expression_54_1 sc:belongsToCell sc:Cell_54 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.120307e+00 .
+
+sc:Expression_54_2 sc:belongsToCell sc:Cell_54 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 4.497235e-01 .
+
+sc:Expression_54_3 sc:belongsToCell sc:Cell_54 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 2.275601e+00 .
+
+sc:Expression_54_4 sc:belongsToCell sc:Cell_54 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.468768e+00 .
+
+sc:Expression_54_5 sc:belongsToCell sc:Cell_54 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 2.898467e+00 .
+
+sc:Expression_55_1 sc:belongsToCell sc:Cell_55 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 3.664938e-01 .
+
+sc:Expression_55_2 sc:belongsToCell sc:Cell_55 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 2.428127e+00 .
+
+sc:Expression_55_3 sc:belongsToCell sc:Cell_55 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 2.271623e+00 .
+
+sc:Expression_55_4 sc:belongsToCell sc:Cell_55 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.338251e+00 .
+
+sc:Expression_55_5 sc:belongsToCell sc:Cell_55 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.326346e+00 .
+
+sc:Expression_56_1 sc:belongsToCell sc:Cell_56 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 8.865157e-02 .
+
+sc:Expression_56_2 sc:belongsToCell sc:Cell_56 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.05803e+00 .
+
+sc:Expression_56_3 sc:belongsToCell sc:Cell_56 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.322672e+00 .
+
+sc:Expression_56_4 sc:belongsToCell sc:Cell_56 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 1.428096e-03 .
+
+sc:Expression_56_5 sc:belongsToCell sc:Cell_56 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.837573e+00 .
+
+sc:Expression_57_1 sc:belongsToCell sc:Cell_57 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.43077e+00 .
+
+sc:Expression_57_2 sc:belongsToCell sc:Cell_57 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.108624e+00 .
+
+sc:Expression_57_3 sc:belongsToCell sc:Cell_57 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.776716e+00 .
+
+sc:Expression_57_4 sc:belongsToCell sc:Cell_57 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.114174e+00 .
+
+sc:Expression_57_5 sc:belongsToCell sc:Cell_57 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 7.431411e-01 .
+
+sc:Expression_58_1 sc:belongsToCell sc:Cell_58 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.141007e+00 .
+
+sc:Expression_58_2 sc:belongsToCell sc:Cell_58 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 2.790104e+00 .
+
+sc:Expression_58_3 sc:belongsToCell sc:Cell_58 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.910826e+00 .
+
+sc:Expression_58_4 sc:belongsToCell sc:Cell_58 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 9.434855e-01 .
+
+sc:Expression_58_5 sc:belongsToCell sc:Cell_58 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 4.001912e-01 .
+
+sc:Expression_59_1 sc:belongsToCell sc:Cell_59 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.290023e+00 .
+
+sc:Expression_59_2 sc:belongsToCell sc:Cell_59 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.186392e+00 .
+
+sc:Expression_59_3 sc:belongsToCell sc:Cell_59 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.600883e-01 .
+
+sc:Expression_59_4 sc:belongsToCell sc:Cell_59 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 1.392335e+00 .
+
+sc:Expression_59_5 sc:belongsToCell sc:Cell_59 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.976029e+00 .
+
+sc:Expression_5_1 sc:belongsToCell sc:Cell_5 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.040171e+00 .
+
+sc:Expression_5_2 sc:belongsToCell sc:Cell_5 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.443203e+00 .
+
+sc:Expression_5_3 sc:belongsToCell sc:Cell_5 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 2.394899e+00 .
+
+sc:Expression_5_4 sc:belongsToCell sc:Cell_5 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.813016e+00 .
+
+sc:Expression_5_5 sc:belongsToCell sc:Cell_5 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 3.987294e-01 .
+
+sc:Expression_60_1 sc:belongsToCell sc:Cell_60 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.229986e+00 .
+
+sc:Expression_60_2 sc:belongsToCell sc:Cell_60 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.644409e+00 .
+
+sc:Expression_60_3 sc:belongsToCell sc:Cell_60 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 2.117682e-01 .
+
+sc:Expression_60_4 sc:belongsToCell sc:Cell_60 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 1.19852e+00 .
+
+sc:Expression_60_5 sc:belongsToCell sc:Cell_60 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 2.925733e+00 .
+
+sc:Expression_61_1 sc:belongsToCell sc:Cell_61 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.858716e+00 .
+
+sc:Expression_61_2 sc:belongsToCell sc:Cell_61 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 2.35824e+00 .
+
+sc:Expression_61_3 sc:belongsToCell sc:Cell_61 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.368788e+00 .
+
+sc:Expression_61_4 sc:belongsToCell sc:Cell_61 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.79582e+00 .
+
+sc:Expression_61_5 sc:belongsToCell sc:Cell_61 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.473531e-01 .
+
+sc:Expression_62_1 sc:belongsToCell sc:Cell_62 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.316617e+00 .
+
+sc:Expression_62_2 sc:belongsToCell sc:Cell_62 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 2.705516e+00 .
+
+sc:Expression_62_3 sc:belongsToCell sc:Cell_62 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 2.219648e+00 .
+
+sc:Expression_62_4 sc:belongsToCell sc:Cell_62 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 4.86775e-01 .
+
+sc:Expression_62_5 sc:belongsToCell sc:Cell_62 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.601513e+00 .
+
+sc:Expression_63_1 sc:belongsToCell sc:Cell_63 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.567097e+00 .
+
+sc:Expression_63_2 sc:belongsToCell sc:Cell_63 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.852431e+00 .
+
+sc:Expression_63_3 sc:belongsToCell sc:Cell_63 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.397806e+00 .
+
+sc:Expression_63_4 sc:belongsToCell sc:Cell_63 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 4.432148e-01 .
+
+sc:Expression_63_5 sc:belongsToCell sc:Cell_63 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 2.210708e+00 .
+
+sc:Expression_64_1 sc:belongsToCell sc:Cell_64 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 8.524946e-01 .
+
+sc:Expression_64_2 sc:belongsToCell sc:Cell_64 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.677717e+00 .
+
+sc:Expression_64_3 sc:belongsToCell sc:Cell_64 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 7.506553e-01 .
+
+sc:Expression_64_4 sc:belongsToCell sc:Cell_64 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 9.308301e-02 .
+
+sc:Expression_64_5 sc:belongsToCell sc:Cell_64 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.520413e+00 .
+
+sc:Expression_65_1 sc:belongsToCell sc:Cell_65 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.80476e+00 .
+
+sc:Expression_65_2 sc:belongsToCell sc:Cell_65 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 2.017375e+00 .
+
+sc:Expression_65_3 sc:belongsToCell sc:Cell_65 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.726193e+00 .
+
+sc:Expression_65_4 sc:belongsToCell sc:Cell_65 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 1.93753e+00 .
+
+sc:Expression_65_5 sc:belongsToCell sc:Cell_65 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 2.977971e+00 .
+
+sc:Expression_66_1 sc:belongsToCell sc:Cell_66 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.014315e+00 .
+
+sc:Expression_66_2 sc:belongsToCell sc:Cell_66 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.156736e+00 .
+
+sc:Expression_66_3 sc:belongsToCell sc:Cell_66 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 2.601218e+00 .
+
+sc:Expression_66_4 sc:belongsToCell sc:Cell_66 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 1.166588e+00 .
+
+sc:Expression_66_5 sc:belongsToCell sc:Cell_66 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 2.6696e+00 .
+
+sc:Expression_67_1 sc:belongsToCell sc:Cell_67 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.259688e-01 .
+
+sc:Expression_67_2 sc:belongsToCell sc:Cell_67 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 8.01994e-01 .
+
+sc:Expression_67_3 sc:belongsToCell sc:Cell_67 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.377036e+00 .
+
+sc:Expression_67_4 sc:belongsToCell sc:Cell_67 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.739522e+00 .
+
+sc:Expression_67_5 sc:belongsToCell sc:Cell_67 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 4.541549e-01 .
+
+sc:Expression_68_1 sc:belongsToCell sc:Cell_68 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.657939e+00 .
+
+sc:Expression_68_2 sc:belongsToCell sc:Cell_68 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.568496e+00 .
+
+sc:Expression_68_3 sc:belongsToCell sc:Cell_68 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.246559e+00 .
+
+sc:Expression_68_4 sc:belongsToCell sc:Cell_68 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 1.436191e+00 .
+
+sc:Expression_68_5 sc:belongsToCell sc:Cell_68 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.728156e+00 .
+
+sc:Expression_69_1 sc:belongsToCell sc:Cell_69 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.739599e+00 .
+
+sc:Expression_69_2 sc:belongsToCell sc:Cell_69 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.534672e+00 .
+
+sc:Expression_69_3 sc:belongsToCell sc:Cell_69 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.771749e+00 .
+
+sc:Expression_69_4 sc:belongsToCell sc:Cell_69 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.951144e+00 .
+
+sc:Expression_69_5 sc:belongsToCell sc:Cell_69 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 2.141148e+00 .
+
+sc:Expression_6_1 sc:belongsToCell sc:Cell_6 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.868455e+00 .
+
+sc:Expression_6_2 sc:belongsToCell sc:Cell_6 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.686493e+00 .
+
+sc:Expression_6_3 sc:belongsToCell sc:Cell_6 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 2.309102e+00 .
+
+sc:Expression_6_4 sc:belongsToCell sc:Cell_6 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 7.850595e-01 .
+
+sc:Expression_6_5 sc:belongsToCell sc:Cell_6 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.437866e+00 .
+
+sc:Expression_70_1 sc:belongsToCell sc:Cell_70 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 4.676356e-02 .
+
+sc:Expression_70_2 sc:belongsToCell sc:Cell_70 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.903413e+00 .
+
+sc:Expression_70_3 sc:belongsToCell sc:Cell_70 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.641315e+00 .
+
+sc:Expression_70_4 sc:belongsToCell sc:Cell_70 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 1.934246e+00 .
+
+sc:Expression_70_5 sc:belongsToCell sc:Cell_70 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 2.274499e+00 .
+
+sc:Expression_71_1 sc:belongsToCell sc:Cell_71 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.273492e+00 .
+
+sc:Expression_71_2 sc:belongsToCell sc:Cell_71 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 4.679467e-02 .
+
+sc:Expression_71_3 sc:belongsToCell sc:Cell_71 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 9.443525e-01 .
+
+sc:Expression_71_4 sc:belongsToCell sc:Cell_71 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 1.478456e+00 .
+
+sc:Expression_71_5 sc:belongsToCell sc:Cell_71 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.874712e+00 .
+
+sc:Expression_72_1 sc:belongsToCell sc:Cell_72 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 9.21079e-01 .
+
+sc:Expression_72_2 sc:belongsToCell sc:Cell_72 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.239636e+00 .
+
+sc:Expression_72_3 sc:belongsToCell sc:Cell_72 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.15405e+00 .
+
+sc:Expression_72_4 sc:belongsToCell sc:Cell_72 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 1.611497e+00 .
+
+sc:Expression_72_5 sc:belongsToCell sc:Cell_72 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 2.822121e-01 .
+
+sc:Expression_73_1 sc:belongsToCell sc:Cell_73 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.270165e+00 .
+
+sc:Expression_73_2 sc:belongsToCell sc:Cell_73 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.179916e+00 .
+
+sc:Expression_73_3 sc:belongsToCell sc:Cell_73 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 2.621553e+00 .
+
+sc:Expression_73_4 sc:belongsToCell sc:Cell_73 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.894839e+00 .
+
+sc:Expression_73_5 sc:belongsToCell sc:Cell_73 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 2.16006e+00 .
+
+sc:Expression_74_1 sc:belongsToCell sc:Cell_74 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.211867e+00 .
+
+sc:Expression_74_2 sc:belongsToCell sc:Cell_74 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 6.498399e-01 .
+
+sc:Expression_74_3 sc:belongsToCell sc:Cell_74 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.429272e+00 .
+
+sc:Expression_74_4 sc:belongsToCell sc:Cell_74 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 1.195655e+00 .
+
+sc:Expression_74_5 sc:belongsToCell sc:Cell_74 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 8.602847e-01 .
+
+sc:Expression_75_1 sc:belongsToCell sc:Cell_75 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.610758e+00 .
+
+sc:Expression_75_2 sc:belongsToCell sc:Cell_75 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 6.563778e-01 .
+
+sc:Expression_75_3 sc:belongsToCell sc:Cell_75 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 7.382302e-01 .
+
+sc:Expression_75_4 sc:belongsToCell sc:Cell_75 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 1.888095e+00 .
+
+sc:Expression_75_5 sc:belongsToCell sc:Cell_75 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.86076e+00 .
+
+sc:Expression_76_1 sc:belongsToCell sc:Cell_76 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 9.565284e-01 .
+
+sc:Expression_76_2 sc:belongsToCell sc:Cell_76 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 5.733241e-01 .
+
+sc:Expression_76_3 sc:belongsToCell sc:Cell_76 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 2.273522e+00 .
+
+sc:Expression_76_4 sc:belongsToCell sc:Cell_76 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 1.888643e+00 .
+
+sc:Expression_76_5 sc:belongsToCell sc:Cell_76 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 5.588996e-01 .
+
+sc:Expression_77_1 sc:belongsToCell sc:Cell_77 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.328791e+00 .
+
+sc:Expression_77_2 sc:belongsToCell sc:Cell_77 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.044885e+00 .
+
+sc:Expression_77_3 sc:belongsToCell sc:Cell_77 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.620765e+00 .
+
+sc:Expression_77_4 sc:belongsToCell sc:Cell_77 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 1.823283e+00 .
+
+sc:Expression_77_5 sc:belongsToCell sc:Cell_77 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 2.770249e+00 .
+
+sc:Expression_78_1 sc:belongsToCell sc:Cell_78 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.547993e+00 .
+
+sc:Expression_78_2 sc:belongsToCell sc:Cell_78 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 7.268448e-01 .
+
+sc:Expression_78_3 sc:belongsToCell sc:Cell_78 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.541164e+00 .
+
+sc:Expression_78_4 sc:belongsToCell sc:Cell_78 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.92764e+00 .
+
+sc:Expression_78_5 sc:belongsToCell sc:Cell_78 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 2.122285e+00 .
+
+sc:Expression_79_1 sc:belongsToCell sc:Cell_79 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.357396e-01 .
+
+sc:Expression_79_2 sc:belongsToCell sc:Cell_79 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.98771e+00 .
+
+sc:Expression_79_3 sc:belongsToCell sc:Cell_79 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 3.041895e-01 .
+
+sc:Expression_79_4 sc:belongsToCell sc:Cell_79 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.031872e+00 .
+
+sc:Expression_79_5 sc:belongsToCell sc:Cell_79 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 2.270255e+00 .
+
+sc:Expression_7_1 sc:belongsToCell sc:Cell_7 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.522662e+00 .
+
+sc:Expression_7_2 sc:belongsToCell sc:Cell_7 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 7.457895e-01 .
+
+sc:Expression_7_3 sc:belongsToCell sc:Cell_7 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 2.802481e+00 .
+
+sc:Expression_7_4 sc:belongsToCell sc:Cell_7 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.800443e+00 .
+
+sc:Expression_7_5 sc:belongsToCell sc:Cell_7 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 2.774523e+00 .
+
+sc:Expression_80_1 sc:belongsToCell sc:Cell_80 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.899575e+00 .
+
+sc:Expression_80_2 sc:belongsToCell sc:Cell_80 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.049669e+00 .
+
+sc:Expression_80_3 sc:belongsToCell sc:Cell_80 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 3.734704e-01 .
+
+sc:Expression_80_4 sc:belongsToCell sc:Cell_80 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.418753e+00 .
+
+sc:Expression_80_5 sc:belongsToCell sc:Cell_80 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.765688e+00 .
+
+sc:Expression_81_1 sc:belongsToCell sc:Cell_81 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 6.026227e-02 .
+
+sc:Expression_81_2 sc:belongsToCell sc:Cell_81 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 4.541245e-01 .
+
+sc:Expression_81_3 sc:belongsToCell sc:Cell_81 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.054769e+00 .
+
+sc:Expression_81_4 sc:belongsToCell sc:Cell_81 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 6.232143e-01 .
+
+sc:Expression_81_5 sc:belongsToCell sc:Cell_81 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 4.089639e-01 .
+
+sc:Expression_82_1 sc:belongsToCell sc:Cell_82 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 5.103468e-01 .
+
+sc:Expression_82_2 sc:belongsToCell sc:Cell_82 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.555471e+00 .
+
+sc:Expression_82_3 sc:belongsToCell sc:Cell_82 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.127097e+00 .
+
+sc:Expression_82_4 sc:belongsToCell sc:Cell_82 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.610858e+00 .
+
+sc:Expression_82_5 sc:belongsToCell sc:Cell_82 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 2.286778e+00 .
+
+sc:Expression_83_1 sc:belongsToCell sc:Cell_83 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.674854e+00 .
+
+sc:Expression_83_2 sc:belongsToCell sc:Cell_83 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 4.675082e-01 .
+
+sc:Expression_83_3 sc:belongsToCell sc:Cell_83 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.715257e-02 .
+
+sc:Expression_83_4 sc:belongsToCell sc:Cell_83 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.75886e+00 .
+
+sc:Expression_83_5 sc:belongsToCell sc:Cell_83 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.954691e+00 .
+
+sc:Expression_84_1 sc:belongsToCell sc:Cell_84 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.212278e+00 .
+
+sc:Expression_84_2 sc:belongsToCell sc:Cell_84 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 2.549286e+00 .
+
+sc:Expression_84_3 sc:belongsToCell sc:Cell_84 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 2.765593e+00 .
+
+sc:Expression_84_4 sc:belongsToCell sc:Cell_84 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.115276e+00 .
+
+sc:Expression_84_5 sc:belongsToCell sc:Cell_84 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.344042e+00 .
+
+sc:Expression_85_1 sc:belongsToCell sc:Cell_85 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.697364e+00 .
+
+sc:Expression_85_2 sc:belongsToCell sc:Cell_85 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 2.842204e+00 .
+
+sc:Expression_85_3 sc:belongsToCell sc:Cell_85 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.109857e+00 .
+
+sc:Expression_85_4 sc:belongsToCell sc:Cell_85 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.530659e-01 .
+
+sc:Expression_85_5 sc:belongsToCell sc:Cell_85 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 8.184771e-01 .
+
+sc:Expression_86_1 sc:belongsToCell sc:Cell_86 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 4.892767e-01 .
+
+sc:Expression_86_2 sc:belongsToCell sc:Cell_86 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 2.516366e+00 .
+
+sc:Expression_86_3 sc:belongsToCell sc:Cell_86 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.496816e+00 .
+
+sc:Expression_86_4 sc:belongsToCell sc:Cell_86 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.41997e+00 .
+
+sc:Expression_86_5 sc:belongsToCell sc:Cell_86 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.475027e+00 .
+
+sc:Expression_87_1 sc:belongsToCell sc:Cell_87 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.994151e+00 .
+
+sc:Expression_87_2 sc:belongsToCell sc:Cell_87 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.07835e+00 .
+
+sc:Expression_87_3 sc:belongsToCell sc:Cell_87 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.776322e+00 .
+
+sc:Expression_87_4 sc:belongsToCell sc:Cell_87 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.563574e+00 .
+
+sc:Expression_87_5 sc:belongsToCell sc:Cell_87 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 5.07011e-01 .
+
+sc:Expression_88_1 sc:belongsToCell sc:Cell_88 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.947022e+00 .
+
+sc:Expression_88_2 sc:belongsToCell sc:Cell_88 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.98176e+00 .
+
+sc:Expression_88_3 sc:belongsToCell sc:Cell_88 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.436051e+00 .
+
+sc:Expression_88_4 sc:belongsToCell sc:Cell_88 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 1.552563e+00 .
+
+sc:Expression_88_5 sc:belongsToCell sc:Cell_88 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 5.15441e-01 .
+
+sc:Expression_89_1 sc:belongsToCell sc:Cell_89 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.621963e+00 .
+
+sc:Expression_89_2 sc:belongsToCell sc:Cell_89 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.175763e+00 .
+
+sc:Expression_89_3 sc:belongsToCell sc:Cell_89 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.609785e+00 .
+
+sc:Expression_89_4 sc:belongsToCell sc:Cell_89 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 8.235455e-01 .
+
+sc:Expression_89_5 sc:belongsToCell sc:Cell_89 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.823347e+00 .
+
+sc:Expression_8_1 sc:belongsToCell sc:Cell_8 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.027332e-01 .
+
+sc:Expression_8_2 sc:belongsToCell sc:Cell_8 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 2.998532e+00 .
+
+sc:Expression_8_3 sc:belongsToCell sc:Cell_8 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 5.108035e-01 .
+
+sc:Expression_8_4 sc:belongsToCell sc:Cell_8 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.109293e+00 .
+
+sc:Expression_8_5 sc:belongsToCell sc:Cell_8 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.960312e+00 .
+
+sc:Expression_90_1 sc:belongsToCell sc:Cell_90 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.249443e+00 .
+
+sc:Expression_90_2 sc:belongsToCell sc:Cell_90 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 2.27486e+00 .
+
+sc:Expression_90_3 sc:belongsToCell sc:Cell_90 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.539119e+00 .
+
+sc:Expression_90_4 sc:belongsToCell sc:Cell_90 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 1.788259e+00 .
+
+sc:Expression_90_5 sc:belongsToCell sc:Cell_90 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.298527e+00 .
+
+sc:Expression_91_1 sc:belongsToCell sc:Cell_91 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.331678e+00 .
+
+sc:Expression_91_2 sc:belongsToCell sc:Cell_91 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 2.294412e+00 .
+
+sc:Expression_91_3 sc:belongsToCell sc:Cell_91 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 2.319133e+00 .
+
+sc:Expression_91_4 sc:belongsToCell sc:Cell_91 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.110321e+00 .
+
+sc:Expression_91_5 sc:belongsToCell sc:Cell_91 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 9.250887e-01 .
+
+sc:Expression_92_1 sc:belongsToCell sc:Cell_92 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.723026e+00 .
+
+sc:Expression_92_2 sc:belongsToCell sc:Cell_92 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.423951e-01 .
+
+sc:Expression_92_3 sc:belongsToCell sc:Cell_92 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 7.23331e-03 .
+
+sc:Expression_92_4 sc:belongsToCell sc:Cell_92 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 1.205044e+00 .
+
+sc:Expression_92_5 sc:belongsToCell sc:Cell_92 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.657167e+00 .
+
+sc:Expression_93_1 sc:belongsToCell sc:Cell_93 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.801575e+00 .
+
+sc:Expression_93_2 sc:belongsToCell sc:Cell_93 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 2.951892e+00 .
+
+sc:Expression_93_3 sc:belongsToCell sc:Cell_93 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.634827e+00 .
+
+sc:Expression_93_4 sc:belongsToCell sc:Cell_93 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 2.850756e+00 .
+
+sc:Expression_93_5 sc:belongsToCell sc:Cell_93 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.906971e+00 .
+
+sc:Expression_94_1 sc:belongsToCell sc:Cell_94 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.719478e+00 .
+
+sc:Expression_94_2 sc:belongsToCell sc:Cell_94 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 8.568864e-01 .
+
+sc:Expression_94_3 sc:belongsToCell sc:Cell_94 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 2.792615e+00 .
+
+sc:Expression_94_4 sc:belongsToCell sc:Cell_94 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 8.345238e-01 .
+
+sc:Expression_94_5 sc:belongsToCell sc:Cell_94 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 2.413556e+00 .
+
+sc:Expression_95_1 sc:belongsToCell sc:Cell_95 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.266065e+00 .
+
+sc:Expression_95_2 sc:belongsToCell sc:Cell_95 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 2.19925e+00 .
+
+sc:Expression_95_3 sc:belongsToCell sc:Cell_95 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 5.117243e-02 .
+
+sc:Expression_95_4 sc:belongsToCell sc:Cell_95 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 1.178148e+00 .
+
+sc:Expression_95_5 sc:belongsToCell sc:Cell_95 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 2.279864e-01 .
+
+sc:Expression_96_1 sc:belongsToCell sc:Cell_96 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.390492e+00 .
+
+sc:Expression_96_2 sc:belongsToCell sc:Cell_96 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.708443e+00 .
+
+sc:Expression_96_3 sc:belongsToCell sc:Cell_96 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.151256e+00 .
+
+sc:Expression_96_4 sc:belongsToCell sc:Cell_96 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 5.086063e-01 .
+
+sc:Expression_96_5 sc:belongsToCell sc:Cell_96 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 5.229024e-01 .
+
+sc:Expression_97_1 sc:belongsToCell sc:Cell_97 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.483808e+00 .
+
+sc:Expression_97_2 sc:belongsToCell sc:Cell_97 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.682035e+00 .
+
+sc:Expression_97_3 sc:belongsToCell sc:Cell_97 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 1.138708e+00 .
+
+sc:Expression_97_4 sc:belongsToCell sc:Cell_97 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 1.331874e+00 .
+
+sc:Expression_97_5 sc:belongsToCell sc:Cell_97 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 5.961531e-01 .
+
+sc:Expression_98_1 sc:belongsToCell sc:Cell_98 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 1.669631e+00 .
+
+sc:Expression_98_2 sc:belongsToCell sc:Cell_98 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.209349e+00 .
+
+sc:Expression_98_3 sc:belongsToCell sc:Cell_98 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 8.872455e-01 .
+
+sc:Expression_98_4 sc:belongsToCell sc:Cell_98 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 5.863611e-01 .
+
+sc:Expression_98_5 sc:belongsToCell sc:Cell_98 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.789152e+00 .
+
+sc:Expression_99_1 sc:belongsToCell sc:Cell_99 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.020245e+00 .
+
+sc:Expression_99_2 sc:belongsToCell sc:Cell_99 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 2.248389e+00 .
+
+sc:Expression_99_3 sc:belongsToCell sc:Cell_99 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 2.026827e+00 .
+
+sc:Expression_99_4 sc:belongsToCell sc:Cell_99 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 1.727971e+00 .
+
+sc:Expression_99_5 sc:belongsToCell sc:Cell_99 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 4.720404e-01 .
+
+sc:Expression_9_1 sc:belongsToCell sc:Cell_9 ;
+    sc:forGene sc:Gene_1 ;
+    sc:hasExpressionLevel 2.917682e-01 .
+
+sc:Expression_9_2 sc:belongsToCell sc:Cell_9 ;
+    sc:forGene sc:Gene_2 ;
+    sc:hasExpressionLevel 1.535516e+00 .
+
+sc:Expression_9_3 sc:belongsToCell sc:Cell_9 ;
+    sc:forGene sc:Gene_3 ;
+    sc:hasExpressionLevel 9.21671e-01 .
+
+sc:Expression_9_4 sc:belongsToCell sc:Cell_9 ;
+    sc:forGene sc:Gene_4 ;
+    sc:hasExpressionLevel 6.482355e-01 .
+
+sc:Expression_9_5 sc:belongsToCell sc:Cell_9 ;
+    sc:forGene sc:Gene_5 ;
+    sc:hasExpressionLevel 1.225401e+00 .
+
+sc:Cell_1 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_10 a sc:Cell ;
+    sc:hasCellType "Fibrous" .
+
+sc:Cell_100 a sc:Cell ;
+    sc:hasCellType "Protoplasmic" .
+
+sc:Cell_11 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_12 a sc:Cell ;
+    sc:hasCellType "Fibrous" .
+
+sc:Cell_13 a sc:Cell ;
+    sc:hasCellType "Protoplasmic" .
+
+sc:Cell_14 a sc:Cell ;
+    sc:hasCellType "Protoplasmic" .
+
+sc:Cell_15 a sc:Cell ;
+    sc:hasCellType "Protoplasmic" .
+
+sc:Cell_16 a sc:Cell ;
+    sc:hasCellType "Protoplasmic" .
+
+sc:Cell_17 a sc:Cell ;
+    sc:hasCellType "Protoplasmic" .
+
+sc:Cell_18 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_19 a sc:Cell ;
+    sc:hasCellType "Protoplasmic" .
+
+sc:Cell_2 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_20 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_21 a sc:Cell ;
+    sc:hasCellType "Fibrous" .
+
+sc:Cell_22 a sc:Cell ;
+    sc:hasCellType "Protoplasmic" .
+
+sc:Cell_23 a sc:Cell ;
+    sc:hasCellType "Fibrous" .
+
+sc:Cell_24 a sc:Cell ;
+    sc:hasCellType "Protoplasmic" .
+
+sc:Cell_25 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_26 a sc:Cell ;
+    sc:hasCellType "Protoplasmic" .
+
+sc:Cell_27 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_28 a sc:Cell ;
+    sc:hasCellType "Fibrous" .
+
+sc:Cell_29 a sc:Cell ;
+    sc:hasCellType "Fibrous" .
+
+sc:Cell_3 a sc:Cell ;
+    sc:hasCellType "Fibrous" .
+
+sc:Cell_30 a sc:Cell ;
+    sc:hasCellType "Protoplasmic" .
+
+sc:Cell_31 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_32 a sc:Cell ;
+    sc:hasCellType "Protoplasmic" .
+
+sc:Cell_33 a sc:Cell ;
+    sc:hasCellType "Protoplasmic" .
+
+sc:Cell_34 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_35 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_36 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_37 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_38 a sc:Cell ;
+    sc:hasCellType "Protoplasmic" .
+
+sc:Cell_39 a sc:Cell ;
+    sc:hasCellType "Protoplasmic" .
+
+sc:Cell_4 a sc:Cell ;
+    sc:hasCellType "Protoplasmic" .
+
+sc:Cell_40 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_41 a sc:Cell ;
+    sc:hasCellType "Protoplasmic" .
+
+sc:Cell_42 a sc:Cell ;
+    sc:hasCellType "Protoplasmic" .
+
+sc:Cell_43 a sc:Cell ;
+    sc:hasCellType "Fibrous" .
+
+sc:Cell_44 a sc:Cell ;
+    sc:hasCellType "Protoplasmic" .
+
+sc:Cell_45 a sc:Cell ;
+    sc:hasCellType "Protoplasmic" .
+
+sc:Cell_46 a sc:Cell ;
+    sc:hasCellType "Fibrous" .
+
+sc:Cell_47 a sc:Cell ;
+    sc:hasCellType "Fibrous" .
+
+sc:Cell_48 a sc:Cell ;
+    sc:hasCellType "Fibrous" .
+
+sc:Cell_49 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_5 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_50 a sc:Cell ;
+    sc:hasCellType "Protoplasmic" .
+
+sc:Cell_51 a sc:Cell ;
+    sc:hasCellType "Protoplasmic" .
+
+sc:Cell_52 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_53 a sc:Cell ;
+    sc:hasCellType "Protoplasmic" .
+
+sc:Cell_54 a sc:Cell ;
+    sc:hasCellType "Fibrous" .
+
+sc:Cell_55 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_56 a sc:Cell ;
+    sc:hasCellType "Protoplasmic" .
+
+sc:Cell_57 a sc:Cell ;
+    sc:hasCellType "Fibrous" .
+
+sc:Cell_58 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_59 a sc:Cell ;
+    sc:hasCellType "Fibrous" .
+
+sc:Cell_6 a sc:Cell ;
+    sc:hasCellType "Protoplasmic" .
+
+sc:Cell_60 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_61 a sc:Cell ;
+    sc:hasCellType "Fibrous" .
+
+sc:Cell_62 a sc:Cell ;
+    sc:hasCellType "Protoplasmic" .
+
+sc:Cell_63 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_64 a sc:Cell ;
+    sc:hasCellType "Protoplasmic" .
+
+sc:Cell_65 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_66 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_67 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_68 a sc:Cell ;
+    sc:hasCellType "Fibrous" .
+
+sc:Cell_69 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_7 a sc:Cell ;
+    sc:hasCellType "Fibrous" .
+
+sc:Cell_70 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_71 a sc:Cell ;
+    sc:hasCellType "Fibrous" .
+
+sc:Cell_72 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_73 a sc:Cell ;
+    sc:hasCellType "Fibrous" .
+
+sc:Cell_74 a sc:Cell ;
+    sc:hasCellType "Protoplasmic" .
+
+sc:Cell_75 a sc:Cell ;
+    sc:hasCellType "Fibrous" .
+
+sc:Cell_76 a sc:Cell ;
+    sc:hasCellType "Protoplasmic" .
+
+sc:Cell_77 a sc:Cell ;
+    sc:hasCellType "Protoplasmic" .
+
+sc:Cell_78 a sc:Cell ;
+    sc:hasCellType "Fibrous" .
+
+sc:Cell_79 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_8 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_80 a sc:Cell ;
+    sc:hasCellType "Protoplasmic" .
+
+sc:Cell_81 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_82 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_83 a sc:Cell ;
+    sc:hasCellType "Fibrous" .
+
+sc:Cell_84 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_85 a sc:Cell ;
+    sc:hasCellType "Protoplasmic" .
+
+sc:Cell_86 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_87 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_88 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_89 a sc:Cell ;
+    sc:hasCellType "Protoplasmic" .
+
+sc:Cell_9 a sc:Cell ;
+    sc:hasCellType "Fibrous" .
+
+sc:Cell_90 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_91 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_92 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_93 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_94 a sc:Cell ;
+    sc:hasCellType "Protoplasmic" .
+
+sc:Cell_95 a sc:Cell ;
+    sc:hasCellType "Reactive" .
+
+sc:Cell_96 a sc:Cell ;
+    sc:hasCellType "Fibrous" .
+
+sc:Cell_97 a sc:Cell ;
+    sc:hasCellType "Fibrous" .
+
+sc:Cell_98 a sc:Cell ;
+    sc:hasCellType "Protoplasmic" .
+
+sc:Cell_99 a sc:Cell ;
+    sc:hasCellType "Fibrous" .
+
+sc:Gene_1 a sc:Gene ;
+    sc:hasGeneID "GENE1" .
+
+sc:Gene_2 a sc:Gene ;
+    sc:hasGeneID "GENE2" .
+
+sc:Gene_3 a sc:Gene ;
+    sc:hasGeneID "GENE3" .
+
+sc:Gene_4 a sc:Gene ;
+    sc:hasGeneID "GENE4" .
+
+sc:Gene_5 a sc:Gene ;
+    sc:hasGeneID "GENE5" .
+

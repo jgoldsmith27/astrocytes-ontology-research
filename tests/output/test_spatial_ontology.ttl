@@ -1,0 +1,1818 @@
+@prefix st: <http://example.org/spatial-transcriptomics#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+st:Gene_1 a st:Gene ;
+    st:expressedAt st:SpatialPoint_1,
+        st:SpatialPoint_10,
+        st:SpatialPoint_100,
+        st:SpatialPoint_11,
+        st:SpatialPoint_12,
+        st:SpatialPoint_13,
+        st:SpatialPoint_14,
+        st:SpatialPoint_15,
+        st:SpatialPoint_16,
+        st:SpatialPoint_17,
+        st:SpatialPoint_18,
+        st:SpatialPoint_19,
+        st:SpatialPoint_2,
+        st:SpatialPoint_20,
+        st:SpatialPoint_21,
+        st:SpatialPoint_22,
+        st:SpatialPoint_23,
+        st:SpatialPoint_24,
+        st:SpatialPoint_25,
+        st:SpatialPoint_26,
+        st:SpatialPoint_27,
+        st:SpatialPoint_28,
+        st:SpatialPoint_29,
+        st:SpatialPoint_3,
+        st:SpatialPoint_30,
+        st:SpatialPoint_31,
+        st:SpatialPoint_32,
+        st:SpatialPoint_33,
+        st:SpatialPoint_34,
+        st:SpatialPoint_35,
+        st:SpatialPoint_36,
+        st:SpatialPoint_37,
+        st:SpatialPoint_38,
+        st:SpatialPoint_39,
+        st:SpatialPoint_4,
+        st:SpatialPoint_40,
+        st:SpatialPoint_41,
+        st:SpatialPoint_42,
+        st:SpatialPoint_43,
+        st:SpatialPoint_44,
+        st:SpatialPoint_45,
+        st:SpatialPoint_46,
+        st:SpatialPoint_47,
+        st:SpatialPoint_48,
+        st:SpatialPoint_49,
+        st:SpatialPoint_5,
+        st:SpatialPoint_50,
+        st:SpatialPoint_51,
+        st:SpatialPoint_52,
+        st:SpatialPoint_53,
+        st:SpatialPoint_54,
+        st:SpatialPoint_55,
+        st:SpatialPoint_56,
+        st:SpatialPoint_57,
+        st:SpatialPoint_58,
+        st:SpatialPoint_59,
+        st:SpatialPoint_6,
+        st:SpatialPoint_60,
+        st:SpatialPoint_61,
+        st:SpatialPoint_62,
+        st:SpatialPoint_63,
+        st:SpatialPoint_64,
+        st:SpatialPoint_65,
+        st:SpatialPoint_66,
+        st:SpatialPoint_67,
+        st:SpatialPoint_68,
+        st:SpatialPoint_69,
+        st:SpatialPoint_7,
+        st:SpatialPoint_70,
+        st:SpatialPoint_71,
+        st:SpatialPoint_72,
+        st:SpatialPoint_73,
+        st:SpatialPoint_74,
+        st:SpatialPoint_75,
+        st:SpatialPoint_76,
+        st:SpatialPoint_77,
+        st:SpatialPoint_78,
+        st:SpatialPoint_79,
+        st:SpatialPoint_8,
+        st:SpatialPoint_80,
+        st:SpatialPoint_81,
+        st:SpatialPoint_82,
+        st:SpatialPoint_83,
+        st:SpatialPoint_84,
+        st:SpatialPoint_85,
+        st:SpatialPoint_86,
+        st:SpatialPoint_87,
+        st:SpatialPoint_88,
+        st:SpatialPoint_89,
+        st:SpatialPoint_9,
+        st:SpatialPoint_90,
+        st:SpatialPoint_91,
+        st:SpatialPoint_92,
+        st:SpatialPoint_93,
+        st:SpatialPoint_94,
+        st:SpatialPoint_95,
+        st:SpatialPoint_96,
+        st:SpatialPoint_97,
+        st:SpatialPoint_98,
+        st:SpatialPoint_99 ;
+    st:hasExpressionLevel 4.211903e-02,
+        6.150916e-02,
+        9.478639e-02,
+        1.261857e-01,
+        1.978209e-01,
+        2.167614e-01,
+        2.210267e-01,
+        3.303233e-01,
+        3.456608e-01,
+        3.813712e-01,
+        4.094798e-01,
+        4.145492e-01,
+        4.553164e-01,
+        4.728898e-01,
+        5.051008e-01,
+        5.428896e-01,
+        5.62233e-01,
+        5.718726e-01,
+        5.973487e-01,
+        6.606486e-01,
+        6.911982e-01,
+        7.862479e-01,
+        8.373952e-01,
+        8.70856e-01,
+        8.889251e-01,
+        9.055268e-01,
+        9.57159e-01,
+        9.589323e-01,
+        9.902666e-01,
+        1.020534e+00,
+        1.103188e+00,
+        1.248234e+00,
+        1.260901e+00,
+        1.263715e+00,
+        1.291159e+00,
+        1.301068e+00,
+        1.340284e+00,
+        1.352009e+00,
+        1.396004e+00,
+        1.490776e+00,
+        1.518543e+00,
+        1.540119e+00,
+        1.551842e+00,
+        1.653577e+00,
+        1.67755e+00,
+        1.69196e+00,
+        1.7182e+00,
+        1.751779e+00,
+        1.812214e+00,
+        1.880548e+00,
+        1.901384e+00,
+        1.913662e+00,
+        1.921274e+00,
+        1.925793e+00,
+        1.964514e+00,
+        1.978348e+00,
+        1.983227e+00,
+        2.005266e+00,
+        2.037402e+00,
+        2.106329e+00,
+        2.125851e+00,
+        2.141427e+00,
+        2.146829e+00,
+        2.176573e+00,
+        2.195521e+00,
+        2.221449e+00,
+        2.247586e+00,
+        2.25097e+00,
+        2.267582e+00,
+        2.273069e+00,
+        2.28623e+00,
+        2.287313e+00,
+        2.308698e+00,
+        2.325196e+00,
+        2.33014e+00,
+        2.364009e+00,
+        2.3783e+00,
+        2.457853e+00,
+        2.491928e+00,
+        2.507235e+00,
+        2.561987e+00,
+        2.575304e+00,
+        2.591435e+00,
+        2.612113e+00,
+        2.6266e+00,
+        2.642782e+00,
+        2.682995e+00,
+        2.700311e+00,
+        2.71984e+00,
+        2.767516e+00,
+        2.76826e+00,
+        2.770222e+00,
+        2.785722e+00,
+        2.841664e+00,
+        2.847964e+00,
+        2.895715e+00,
+        2.916636e+00,
+        2.922774e+00,
+        2.938053e+00,
+        2.997245e+00 ;
+    st:hasGeneID "GENE1" .
+
+st:Gene_2 a st:Gene ;
+    st:expressedAt st:SpatialPoint_1,
+        st:SpatialPoint_10,
+        st:SpatialPoint_100,
+        st:SpatialPoint_11,
+        st:SpatialPoint_12,
+        st:SpatialPoint_13,
+        st:SpatialPoint_14,
+        st:SpatialPoint_15,
+        st:SpatialPoint_16,
+        st:SpatialPoint_17,
+        st:SpatialPoint_18,
+        st:SpatialPoint_19,
+        st:SpatialPoint_2,
+        st:SpatialPoint_20,
+        st:SpatialPoint_21,
+        st:SpatialPoint_22,
+        st:SpatialPoint_23,
+        st:SpatialPoint_24,
+        st:SpatialPoint_25,
+        st:SpatialPoint_26,
+        st:SpatialPoint_27,
+        st:SpatialPoint_28,
+        st:SpatialPoint_29,
+        st:SpatialPoint_3,
+        st:SpatialPoint_30,
+        st:SpatialPoint_31,
+        st:SpatialPoint_32,
+        st:SpatialPoint_33,
+        st:SpatialPoint_34,
+        st:SpatialPoint_35,
+        st:SpatialPoint_36,
+        st:SpatialPoint_37,
+        st:SpatialPoint_38,
+        st:SpatialPoint_39,
+        st:SpatialPoint_4,
+        st:SpatialPoint_40,
+        st:SpatialPoint_41,
+        st:SpatialPoint_42,
+        st:SpatialPoint_43,
+        st:SpatialPoint_44,
+        st:SpatialPoint_45,
+        st:SpatialPoint_46,
+        st:SpatialPoint_47,
+        st:SpatialPoint_48,
+        st:SpatialPoint_49,
+        st:SpatialPoint_5,
+        st:SpatialPoint_50,
+        st:SpatialPoint_51,
+        st:SpatialPoint_52,
+        st:SpatialPoint_53,
+        st:SpatialPoint_54,
+        st:SpatialPoint_55,
+        st:SpatialPoint_56,
+        st:SpatialPoint_57,
+        st:SpatialPoint_58,
+        st:SpatialPoint_59,
+        st:SpatialPoint_6,
+        st:SpatialPoint_60,
+        st:SpatialPoint_61,
+        st:SpatialPoint_62,
+        st:SpatialPoint_63,
+        st:SpatialPoint_64,
+        st:SpatialPoint_65,
+        st:SpatialPoint_66,
+        st:SpatialPoint_67,
+        st:SpatialPoint_68,
+        st:SpatialPoint_69,
+        st:SpatialPoint_7,
+        st:SpatialPoint_70,
+        st:SpatialPoint_71,
+        st:SpatialPoint_72,
+        st:SpatialPoint_73,
+        st:SpatialPoint_74,
+        st:SpatialPoint_75,
+        st:SpatialPoint_76,
+        st:SpatialPoint_77,
+        st:SpatialPoint_78,
+        st:SpatialPoint_79,
+        st:SpatialPoint_8,
+        st:SpatialPoint_80,
+        st:SpatialPoint_81,
+        st:SpatialPoint_82,
+        st:SpatialPoint_83,
+        st:SpatialPoint_84,
+        st:SpatialPoint_85,
+        st:SpatialPoint_86,
+        st:SpatialPoint_87,
+        st:SpatialPoint_88,
+        st:SpatialPoint_89,
+        st:SpatialPoint_9,
+        st:SpatialPoint_90,
+        st:SpatialPoint_91,
+        st:SpatialPoint_92,
+        st:SpatialPoint_93,
+        st:SpatialPoint_94,
+        st:SpatialPoint_95,
+        st:SpatialPoint_96,
+        st:SpatialPoint_97,
+        st:SpatialPoint_98,
+        st:SpatialPoint_99 ;
+    st:hasExpressionLevel 1.045775e-02,
+        1.803592e-02,
+        4.378376e-02,
+        7.856345e-02,
+        8.048648e-02,
+        1.074639e-01,
+        1.110737e-01,
+        1.361724e-01,
+        1.748328e-01,
+        1.840478e-01,
+        2.311972e-01,
+        2.328776e-01,
+        2.390642e-01,
+        2.481765e-01,
+        2.971392e-01,
+        3.275277e-01,
+        3.523781e-01,
+        3.871671e-01,
+        4.000902e-01,
+        4.118317e-01,
+        4.610781e-01,
+        5.208388e-01,
+        5.827002e-01,
+        5.860415e-01,
+        5.881047e-01,
+        6.311908e-01,
+        6.463244e-01,
+        6.670826e-01,
+        6.779263e-01,
+        7.468953e-01,
+        8.607242e-01,
+        8.644898e-01,
+        8.661725e-01,
+        9.082807e-01,
+        9.110963e-01,
+        9.651463e-01,
+        9.7765e-01,
+        1.017672e+00,
+        1.018903e+00,
+        1.025617e+00,
+        1.124628e+00,
+        1.125783e+00,
+        1.18019e+00,
+        1.197921e+00,
+        1.209226e+00,
+        1.213523e+00,
+        1.233048e+00,
+        1.289326e+00,
+        1.379163e+00,
+        1.557806e+00,
+        1.563021e+00,
+        1.611246e+00,
+        1.644319e+00,
+        1.646877e+00,
+        1.671249e+00,
+        1.697858e+00,
+        1.793462e+00,
+        1.793729e+00,
+        1.868125e+00,
+        1.871583e+00,
+        1.879883e+00,
+        1.89708e+00,
+        1.909021e+00,
+        1.950635e+00,
+        1.959729e+00,
+        1.960201e+00,
+        2.006602e+00,
+        2.009193e+00,
+        2.051475e+00,
+        2.100084e+00,
+        2.147222e+00,
+        2.232252e+00,
+        2.24962e+00,
+        2.250237e+00,
+        2.315649e+00,
+        2.358223e+00,
+        2.395398e+00,
+        2.438682e+00,
+        2.442065e+00,
+        2.450903e+00,
+        2.463557e+00,
+        2.500119e+00,
+        2.501871e+00,
+        2.520926e+00,
+        2.547137e+00,
+        2.569297e+00,
+        2.594275e+00,
+        2.616109e+00,
+        2.62751e+00,
+        2.67911e+00,
+        2.745526e+00,
+        2.770595e+00,
+        2.770799e+00,
+        2.832142e+00,
+        2.879528e+00,
+        2.897713e+00,
+        2.916694e+00,
+        2.941554e+00,
+        2.95073e+00,
+        2.992308e+00 ;
+    st:hasGeneID "GENE2" .
+
+st:Gene_3 a st:Gene ;
+    st:expressedAt st:SpatialPoint_1,
+        st:SpatialPoint_10,
+        st:SpatialPoint_100,
+        st:SpatialPoint_11,
+        st:SpatialPoint_12,
+        st:SpatialPoint_13,
+        st:SpatialPoint_14,
+        st:SpatialPoint_15,
+        st:SpatialPoint_16,
+        st:SpatialPoint_17,
+        st:SpatialPoint_18,
+        st:SpatialPoint_19,
+        st:SpatialPoint_2,
+        st:SpatialPoint_20,
+        st:SpatialPoint_21,
+        st:SpatialPoint_22,
+        st:SpatialPoint_23,
+        st:SpatialPoint_24,
+        st:SpatialPoint_25,
+        st:SpatialPoint_26,
+        st:SpatialPoint_27,
+        st:SpatialPoint_28,
+        st:SpatialPoint_29,
+        st:SpatialPoint_3,
+        st:SpatialPoint_30,
+        st:SpatialPoint_31,
+        st:SpatialPoint_32,
+        st:SpatialPoint_33,
+        st:SpatialPoint_34,
+        st:SpatialPoint_35,
+        st:SpatialPoint_36,
+        st:SpatialPoint_37,
+        st:SpatialPoint_38,
+        st:SpatialPoint_39,
+        st:SpatialPoint_4,
+        st:SpatialPoint_40,
+        st:SpatialPoint_41,
+        st:SpatialPoint_42,
+        st:SpatialPoint_43,
+        st:SpatialPoint_44,
+        st:SpatialPoint_45,
+        st:SpatialPoint_46,
+        st:SpatialPoint_47,
+        st:SpatialPoint_48,
+        st:SpatialPoint_49,
+        st:SpatialPoint_5,
+        st:SpatialPoint_50,
+        st:SpatialPoint_51,
+        st:SpatialPoint_52,
+        st:SpatialPoint_53,
+        st:SpatialPoint_54,
+        st:SpatialPoint_55,
+        st:SpatialPoint_56,
+        st:SpatialPoint_57,
+        st:SpatialPoint_58,
+        st:SpatialPoint_59,
+        st:SpatialPoint_6,
+        st:SpatialPoint_60,
+        st:SpatialPoint_61,
+        st:SpatialPoint_62,
+        st:SpatialPoint_63,
+        st:SpatialPoint_64,
+        st:SpatialPoint_65,
+        st:SpatialPoint_66,
+        st:SpatialPoint_67,
+        st:SpatialPoint_68,
+        st:SpatialPoint_69,
+        st:SpatialPoint_7,
+        st:SpatialPoint_70,
+        st:SpatialPoint_71,
+        st:SpatialPoint_72,
+        st:SpatialPoint_73,
+        st:SpatialPoint_74,
+        st:SpatialPoint_75,
+        st:SpatialPoint_76,
+        st:SpatialPoint_77,
+        st:SpatialPoint_78,
+        st:SpatialPoint_79,
+        st:SpatialPoint_8,
+        st:SpatialPoint_80,
+        st:SpatialPoint_81,
+        st:SpatialPoint_82,
+        st:SpatialPoint_83,
+        st:SpatialPoint_84,
+        st:SpatialPoint_85,
+        st:SpatialPoint_86,
+        st:SpatialPoint_87,
+        st:SpatialPoint_88,
+        st:SpatialPoint_89,
+        st:SpatialPoint_9,
+        st:SpatialPoint_90,
+        st:SpatialPoint_91,
+        st:SpatialPoint_92,
+        st:SpatialPoint_93,
+        st:SpatialPoint_94,
+        st:SpatialPoint_95,
+        st:SpatialPoint_96,
+        st:SpatialPoint_97,
+        st:SpatialPoint_98,
+        st:SpatialPoint_99 ;
+    st:hasExpressionLevel 2.709977e-02,
+        7.712794e-02,
+        1.516406e-01,
+        1.687335e-01,
+        1.731069e-01,
+        1.779792e-01,
+        1.833381e-01,
+        1.86818e-01,
+        2.24714e-01,
+        2.261375e-01,
+        2.416252e-01,
+        2.453825e-01,
+        2.624789e-01,
+        2.627677e-01,
+        2.703421e-01,
+        3.059549e-01,
+        3.246666e-01,
+        3.431207e-01,
+        3.573547e-01,
+        4.756329e-01,
+        4.769327e-01,
+        5.145978e-01,
+        5.288167e-01,
+        5.433141e-01,
+        5.69939e-01,
+        5.832599e-01,
+        5.903769e-01,
+        5.951441e-01,
+        6.065631e-01,
+        6.361949e-01,
+        6.767821e-01,
+        6.828196e-01,
+        7.006935e-01,
+        7.447157e-01,
+        7.671854e-01,
+        7.977869e-01,
+        8.735231e-01,
+        8.895881e-01,
+        9.400447e-01,
+        9.459873e-01,
+        9.476279e-01,
+        9.724134e-01,
+        9.8692e-01,
+        1.000152e+00,
+        1.073421e+00,
+        1.100209e+00,
+        1.116697e+00,
+        1.131803e+00,
+        1.182939e+00,
+        1.280493e+00,
+        1.293638e+00,
+        1.350085e+00,
+        1.356752e+00,
+        1.470145e+00,
+        1.509907e+00,
+        1.531616e+00,
+        1.536184e+00,
+        1.562429e+00,
+        1.570009e+00,
+        1.596179e+00,
+        1.630107e+00,
+        1.668456e+00,
+        1.700408e+00,
+        1.713633e+00,
+        1.714326e+00,
+        1.715643e+00,
+        1.829649e+00,
+        1.887112e+00,
+        1.897682e+00,
+        1.901182e+00,
+        1.902896e+00,
+        1.999113e+00,
+        2.009221e+00,
+        2.010724e+00,
+        2.092712e+00,
+        2.110328e+00,
+        2.15659e+00,
+        2.158009e+00,
+        2.260334e+00,
+        2.303665e+00,
+        2.313981e+00,
+        2.408826e+00,
+        2.49944e+00,
+        2.529143e+00,
+        2.530441e+00,
+        2.536305e+00,
+        2.561767e+00,
+        2.579119e+00,
+        2.620832e+00,
+        2.646396e+00,
+        2.653106e+00,
+        2.725663e+00,
+        2.728545e+00,
+        2.769953e+00,
+        2.795703e+00,
+        2.838174e+00,
+        2.890758e+00,
+        2.927359e+00,
+        2.968103e+00,
+        2.979974e+00 ;
+    st:hasGeneID "GENE3" .
+
+st:Gene_4 a st:Gene ;
+    st:expressedAt st:SpatialPoint_1,
+        st:SpatialPoint_10,
+        st:SpatialPoint_100,
+        st:SpatialPoint_11,
+        st:SpatialPoint_12,
+        st:SpatialPoint_13,
+        st:SpatialPoint_14,
+        st:SpatialPoint_15,
+        st:SpatialPoint_16,
+        st:SpatialPoint_17,
+        st:SpatialPoint_18,
+        st:SpatialPoint_19,
+        st:SpatialPoint_2,
+        st:SpatialPoint_20,
+        st:SpatialPoint_21,
+        st:SpatialPoint_22,
+        st:SpatialPoint_23,
+        st:SpatialPoint_24,
+        st:SpatialPoint_25,
+        st:SpatialPoint_26,
+        st:SpatialPoint_27,
+        st:SpatialPoint_28,
+        st:SpatialPoint_29,
+        st:SpatialPoint_3,
+        st:SpatialPoint_30,
+        st:SpatialPoint_31,
+        st:SpatialPoint_32,
+        st:SpatialPoint_33,
+        st:SpatialPoint_34,
+        st:SpatialPoint_35,
+        st:SpatialPoint_36,
+        st:SpatialPoint_37,
+        st:SpatialPoint_38,
+        st:SpatialPoint_39,
+        st:SpatialPoint_4,
+        st:SpatialPoint_40,
+        st:SpatialPoint_41,
+        st:SpatialPoint_42,
+        st:SpatialPoint_43,
+        st:SpatialPoint_44,
+        st:SpatialPoint_45,
+        st:SpatialPoint_46,
+        st:SpatialPoint_47,
+        st:SpatialPoint_48,
+        st:SpatialPoint_49,
+        st:SpatialPoint_5,
+        st:SpatialPoint_50,
+        st:SpatialPoint_51,
+        st:SpatialPoint_52,
+        st:SpatialPoint_53,
+        st:SpatialPoint_54,
+        st:SpatialPoint_55,
+        st:SpatialPoint_56,
+        st:SpatialPoint_57,
+        st:SpatialPoint_58,
+        st:SpatialPoint_59,
+        st:SpatialPoint_6,
+        st:SpatialPoint_60,
+        st:SpatialPoint_61,
+        st:SpatialPoint_62,
+        st:SpatialPoint_63,
+        st:SpatialPoint_64,
+        st:SpatialPoint_65,
+        st:SpatialPoint_66,
+        st:SpatialPoint_67,
+        st:SpatialPoint_68,
+        st:SpatialPoint_69,
+        st:SpatialPoint_7,
+        st:SpatialPoint_70,
+        st:SpatialPoint_71,
+        st:SpatialPoint_72,
+        st:SpatialPoint_73,
+        st:SpatialPoint_74,
+        st:SpatialPoint_75,
+        st:SpatialPoint_76,
+        st:SpatialPoint_77,
+        st:SpatialPoint_78,
+        st:SpatialPoint_79,
+        st:SpatialPoint_8,
+        st:SpatialPoint_80,
+        st:SpatialPoint_81,
+        st:SpatialPoint_82,
+        st:SpatialPoint_83,
+        st:SpatialPoint_84,
+        st:SpatialPoint_85,
+        st:SpatialPoint_86,
+        st:SpatialPoint_87,
+        st:SpatialPoint_88,
+        st:SpatialPoint_89,
+        st:SpatialPoint_9,
+        st:SpatialPoint_90,
+        st:SpatialPoint_91,
+        st:SpatialPoint_92,
+        st:SpatialPoint_93,
+        st:SpatialPoint_94,
+        st:SpatialPoint_95,
+        st:SpatialPoint_96,
+        st:SpatialPoint_97,
+        st:SpatialPoint_98,
+        st:SpatialPoint_99 ;
+    st:hasExpressionLevel 7.858872e-03,
+        2.447363e-02,
+        2.775317e-02,
+        3.360134e-02,
+        1.053513e-01,
+        1.472946e-01,
+        1.80575e-01,
+        2.147269e-01,
+        2.364345e-01,
+        2.546622e-01,
+        2.649654e-01,
+        2.880874e-01,
+        3.522496e-01,
+        3.948064e-01,
+        4.474448e-01,
+        4.584124e-01,
+        5.026759e-01,
+        5.523739e-01,
+        6.878966e-01,
+        7.337803e-01,
+        7.614859e-01,
+        7.637449e-01,
+        7.994603e-01,
+        8.200417e-01,
+        8.369355e-01,
+        8.848412e-01,
+        9.558411e-01,
+        1.00459e+00,
+        1.03869e+00,
+        1.04174e+00,
+        1.092532e+00,
+        1.1372e+00,
+        1.181735e+00,
+        1.207065e+00,
+        1.224222e+00,
+        1.251789e+00,
+        1.281155e+00,
+        1.362463e+00,
+        1.388722e+00,
+        1.504755e+00,
+        1.561275e+00,
+        1.575072e+00,
+        1.578928e+00,
+        1.583354e+00,
+        1.5933e+00,
+        1.610193e+00,
+        1.644262e+00,
+        1.646115e+00,
+        1.680703e+00,
+        1.705515e+00,
+        1.731934e+00,
+        1.794036e+00,
+        1.817296e+00,
+        1.840559e+00,
+        1.84993e+00,
+        1.856516e+00,
+        1.897557e+00,
+        1.951171e+00,
+        1.989072e+00,
+        1.992107e+00,
+        2.001285e+00,
+        2.023506e+00,
+        2.073779e+00,
+        2.075458e+00,
+        2.079894e+00,
+        2.117244e+00,
+        2.163905e+00,
+        2.164408e+00,
+        2.210135e+00,
+        2.25855e+00,
+        2.259305e+00,
+        2.279469e+00,
+        2.303075e+00,
+        2.380998e+00,
+        2.566415e+00,
+        2.584696e+00,
+        2.673251e+00,
+        2.688486e+00,
+        2.700249e+00,
+        2.701165e+00,
+        2.707087e+00,
+        2.710417e+00,
+        2.717472e+00,
+        2.727369e+00,
+        2.749661e+00,
+        2.764751e+00,
+        2.786646e+00,
+        2.814811e+00,
+        2.83564e+00,
+        2.882463e+00,
+        2.885044e+00,
+        2.889497e+00,
+        2.902177e+00,
+        2.909065e+00,
+        2.915994e+00,
+        2.92578e+00,
+        2.933028e+00,
+        2.981689e+00,
+        2.986999e+00,
+        2.989248e+00 ;
+    st:hasGeneID "GENE4" .
+
+st:Gene_5 a st:Gene ;
+    st:expressedAt st:SpatialPoint_1,
+        st:SpatialPoint_10,
+        st:SpatialPoint_100,
+        st:SpatialPoint_11,
+        st:SpatialPoint_12,
+        st:SpatialPoint_13,
+        st:SpatialPoint_14,
+        st:SpatialPoint_15,
+        st:SpatialPoint_16,
+        st:SpatialPoint_17,
+        st:SpatialPoint_18,
+        st:SpatialPoint_19,
+        st:SpatialPoint_2,
+        st:SpatialPoint_20,
+        st:SpatialPoint_21,
+        st:SpatialPoint_22,
+        st:SpatialPoint_23,
+        st:SpatialPoint_24,
+        st:SpatialPoint_25,
+        st:SpatialPoint_26,
+        st:SpatialPoint_27,
+        st:SpatialPoint_28,
+        st:SpatialPoint_29,
+        st:SpatialPoint_3,
+        st:SpatialPoint_30,
+        st:SpatialPoint_31,
+        st:SpatialPoint_32,
+        st:SpatialPoint_33,
+        st:SpatialPoint_34,
+        st:SpatialPoint_35,
+        st:SpatialPoint_36,
+        st:SpatialPoint_37,
+        st:SpatialPoint_38,
+        st:SpatialPoint_39,
+        st:SpatialPoint_4,
+        st:SpatialPoint_40,
+        st:SpatialPoint_41,
+        st:SpatialPoint_42,
+        st:SpatialPoint_43,
+        st:SpatialPoint_44,
+        st:SpatialPoint_45,
+        st:SpatialPoint_46,
+        st:SpatialPoint_47,
+        st:SpatialPoint_48,
+        st:SpatialPoint_49,
+        st:SpatialPoint_5,
+        st:SpatialPoint_50,
+        st:SpatialPoint_51,
+        st:SpatialPoint_52,
+        st:SpatialPoint_53,
+        st:SpatialPoint_54,
+        st:SpatialPoint_55,
+        st:SpatialPoint_56,
+        st:SpatialPoint_57,
+        st:SpatialPoint_58,
+        st:SpatialPoint_59,
+        st:SpatialPoint_6,
+        st:SpatialPoint_60,
+        st:SpatialPoint_61,
+        st:SpatialPoint_62,
+        st:SpatialPoint_63,
+        st:SpatialPoint_64,
+        st:SpatialPoint_65,
+        st:SpatialPoint_66,
+        st:SpatialPoint_67,
+        st:SpatialPoint_68,
+        st:SpatialPoint_69,
+        st:SpatialPoint_7,
+        st:SpatialPoint_70,
+        st:SpatialPoint_71,
+        st:SpatialPoint_72,
+        st:SpatialPoint_73,
+        st:SpatialPoint_74,
+        st:SpatialPoint_75,
+        st:SpatialPoint_76,
+        st:SpatialPoint_77,
+        st:SpatialPoint_78,
+        st:SpatialPoint_79,
+        st:SpatialPoint_8,
+        st:SpatialPoint_80,
+        st:SpatialPoint_81,
+        st:SpatialPoint_82,
+        st:SpatialPoint_83,
+        st:SpatialPoint_84,
+        st:SpatialPoint_85,
+        st:SpatialPoint_86,
+        st:SpatialPoint_87,
+        st:SpatialPoint_88,
+        st:SpatialPoint_89,
+        st:SpatialPoint_9,
+        st:SpatialPoint_90,
+        st:SpatialPoint_91,
+        st:SpatialPoint_92,
+        st:SpatialPoint_93,
+        st:SpatialPoint_94,
+        st:SpatialPoint_95,
+        st:SpatialPoint_96,
+        st:SpatialPoint_97,
+        st:SpatialPoint_98,
+        st:SpatialPoint_99 ;
+    st:hasExpressionLevel 1.092466e-02,
+        3.224001e-02,
+        4.857718e-02,
+        9.811836e-02,
+        1.038095e-01,
+        1.079265e-01,
+        1.263115e-01,
+        1.28482e-01,
+        1.430876e-01,
+        1.652551e-01,
+        1.850892e-01,
+        2.14321e-01,
+        2.740983e-01,
+        2.7455e-01,
+        2.901891e-01,
+        3.275856e-01,
+        3.72204e-01,
+        3.957485e-01,
+        4.245685e-01,
+        5.211948e-01,
+        5.582685e-01,
+        5.729425e-01,
+        6.186376e-01,
+        6.412977e-01,
+        6.568197e-01,
+        6.596662e-01,
+        7.120449e-01,
+        7.571067e-01,
+        7.772885e-01,
+        8.535024e-01,
+        9.282053e-01,
+        9.523102e-01,
+        9.590239e-01,
+        9.724734e-01,
+        9.965663e-01,
+        1.001792e+00,
+        1.040538e+00,
+        1.05851e+00,
+        1.069117e+00,
+        1.124829e+00,
+        1.142686e+00,
+        1.18483e+00,
+        1.206539e+00,
+        1.217031e+00,
+        1.288761e+00,
+        1.351569e+00,
+        1.352722e+00,
+        1.37752e+00,
+        1.381544e+00,
+        1.437148e+00,
+        1.458457e+00,
+        1.506106e+00,
+        1.52439e+00,
+        1.532293e+00,
+        1.574219e+00,
+        1.585184e+00,
+        1.680247e+00,
+        1.682289e+00,
+        1.760513e+00,
+        1.774112e+00,
+        1.810672e+00,
+        1.83533e+00,
+        1.893633e+00,
+        1.921013e+00,
+        1.947678e+00,
+        1.954128e+00,
+        1.95987e+00,
+        1.997847e+00,
+        2.039009e+00,
+        2.088719e+00,
+        2.105396e+00,
+        2.127463e+00,
+        2.177263e+00,
+        2.201639e+00,
+        2.202028e+00,
+        2.216614e+00,
+        2.26333e+00,
+        2.264968e+00,
+        2.336214e+00,
+        2.422557e+00,
+        2.425337e+00,
+        2.448783e+00,
+        2.450044e+00,
+        2.466062e+00,
+        2.46991e+00,
+        2.479764e+00,
+        2.588099e+00,
+        2.598436e+00,
+        2.609084e+00,
+        2.633813e+00,
+        2.63451e+00,
+        2.649452e+00,
+        2.691539e+00,
+        2.730091e+00,
+        2.758588e+00,
+        2.764604e+00,
+        2.765012e+00,
+        2.788469e+00,
+        2.788482e+00,
+        2.892452e+00 ;
+    st:hasGeneID "GENE5" .
+
+st:AstrocyteType_1 st:astrocyteType "Reactive" ;
+    st:typeProbability 7.81081e-01 .
+
+st:AstrocyteType_10 st:astrocyteType "Reactive" ;
+    st:typeProbability 8.459204e-01 .
+
+st:AstrocyteType_100 st:astrocyteType "Protoplasmic" ;
+    st:typeProbability 7.481221e-01 .
+
+st:AstrocyteType_11 st:astrocyteType "Protoplasmic" ;
+    st:typeProbability 9.89729e-01 .
+
+st:AstrocyteType_12 st:astrocyteType "Protoplasmic" ;
+    st:typeProbability 8.471271e-01 .
+
+st:AstrocyteType_13 st:astrocyteType "Reactive" ;
+    st:typeProbability 9.144258e-01 .
+
+st:AstrocyteType_14 st:astrocyteType "Reactive" ;
+    st:typeProbability 9.592691e-01 .
+
+st:AstrocyteType_15 st:astrocyteType "Reactive" ;
+    st:typeProbability 9.129761e-01 .
+
+st:AstrocyteType_16 st:astrocyteType "Reactive" ;
+    st:typeProbability 7.491819e-01 .
+
+st:AstrocyteType_17 st:astrocyteType "Reactive" ;
+    st:typeProbability 8.580951e-01 .
+
+st:AstrocyteType_18 st:astrocyteType "Reactive" ;
+    st:typeProbability 9.160994e-01 .
+
+st:AstrocyteType_19 st:astrocyteType "Reactive" ;
+    st:typeProbability 9.379083e-01 .
+
+st:AstrocyteType_2 st:astrocyteType "Fibrous" ;
+    st:typeProbability 8.174214e-01 .
+
+st:AstrocyteType_20 st:astrocyteType "Protoplasmic" ;
+    st:typeProbability 9.611569e-01 .
+
+st:AstrocyteType_21 st:astrocyteType "Fibrous" ;
+    st:typeProbability 9.473292e-01 .
+
+st:AstrocyteType_22 st:astrocyteType "Reactive" ;
+    st:typeProbability 8.661251e-01 .
+
+st:AstrocyteType_23 st:astrocyteType "Fibrous" ;
+    st:typeProbability 8.492545e-01 .
+
+st:AstrocyteType_24 st:astrocyteType "Reactive" ;
+    st:typeProbability 7.428066e-01 .
+
+st:AstrocyteType_25 st:astrocyteType "Protoplasmic" ;
+    st:typeProbability 7.255511e-01 .
+
+st:AstrocyteType_26 st:astrocyteType "Fibrous" ;
+    st:typeProbability 7.790375e-01 .
+
+st:AstrocyteType_27 st:astrocyteType "Fibrous" ;
+    st:typeProbability 8.559134e-01 .
+
+st:AstrocyteType_28 st:astrocyteType "Fibrous" ;
+    st:typeProbability 9.18739e-01 .
+
+st:AstrocyteType_29 st:astrocyteType "Fibrous" ;
+    st:typeProbability 7.259209e-01 .
+
+st:AstrocyteType_3 st:astrocyteType "Reactive" ;
+    st:typeProbability 7.176146e-01 .
+
+st:AstrocyteType_30 st:astrocyteType "Fibrous" ;
+    st:typeProbability 8.182709e-01 .
+
+st:AstrocyteType_31 st:astrocyteType "Fibrous" ;
+    st:typeProbability 9.897078e-01 .
+
+st:AstrocyteType_32 st:astrocyteType "Reactive" ;
+    st:typeProbability 9.166199e-01 .
+
+st:AstrocyteType_33 st:astrocyteType "Reactive" ;
+    st:typeProbability 7.515556e-01 .
+
+st:AstrocyteType_34 st:astrocyteType "Reactive" ;
+    st:typeProbability 7.664807e-01 .
+
+st:AstrocyteType_35 st:astrocyteType "Protoplasmic" ;
+    st:typeProbability 8.137321e-01 .
+
+st:AstrocyteType_36 st:astrocyteType "Protoplasmic" ;
+    st:typeProbability 9.542187e-01 .
+
+st:AstrocyteType_37 st:astrocyteType "Reactive" ;
+    st:typeProbability 9.095246e-01 .
+
+st:AstrocyteType_38 st:astrocyteType "Fibrous" ;
+    st:typeProbability 9.539118e-01 .
+
+st:AstrocyteType_39 st:astrocyteType "Protoplasmic" ;
+    st:typeProbability 7.467278e-01 .
+
+st:AstrocyteType_4 st:astrocyteType "Reactive" ;
+    st:typeProbability 8.287294e-01 .
+
+st:AstrocyteType_40 st:astrocyteType "Fibrous" ;
+    st:typeProbability 8.081255e-01 .
+
+st:AstrocyteType_41 st:astrocyteType "Protoplasmic" ;
+    st:typeProbability 7.066747e-01 .
+
+st:AstrocyteType_42 st:astrocyteType "Fibrous" ;
+    st:typeProbability 7.743258e-01 .
+
+st:AstrocyteType_43 st:astrocyteType "Fibrous" ;
+    st:typeProbability 7.774376e-01 .
+
+st:AstrocyteType_44 st:astrocyteType "Fibrous" ;
+    st:typeProbability 7.653151e-01 .
+
+st:AstrocyteType_45 st:astrocyteType "Reactive" ;
+    st:typeProbability 8.921847e-01 .
+
+st:AstrocyteType_46 st:astrocyteType "Reactive" ;
+    st:typeProbability 8.56006e-01 .
+
+st:AstrocyteType_47 st:astrocyteType "Reactive" ;
+    st:typeProbability 9.637268e-01 .
+
+st:AstrocyteType_48 st:astrocyteType "Reactive" ;
+    st:typeProbability 7.91281e-01 .
+
+st:AstrocyteType_49 st:astrocyteType "Fibrous" ;
+    st:typeProbability 7.738627e-01 .
+
+st:AstrocyteType_5 st:astrocyteType "Fibrous" ;
+    st:typeProbability 7.73941e-01 .
+
+st:AstrocyteType_50 st:astrocyteType "Fibrous" ;
+    st:typeProbability 7.852239e-01 .
+
+st:AstrocyteType_51 st:astrocyteType "Reactive" ;
+    st:typeProbability 9.655117e-01 .
+
+st:AstrocyteType_52 st:astrocyteType "Protoplasmic" ;
+    st:typeProbability 7.78092e-01 .
+
+st:AstrocyteType_53 st:astrocyteType "Fibrous" ;
+    st:typeProbability 7.63353e-01 .
+
+st:AstrocyteType_54 st:astrocyteType "Fibrous" ;
+    st:typeProbability 7.198514e-01 .
+
+st:AstrocyteType_55 st:astrocyteType "Fibrous" ;
+    st:typeProbability 9.059903e-01 .
+
+st:AstrocyteType_56 st:astrocyteType "Reactive" ;
+    st:typeProbability 8.831585e-01 .
+
+st:AstrocyteType_57 st:astrocyteType "Protoplasmic" ;
+    st:typeProbability 7.572379e-01 .
+
+st:AstrocyteType_58 st:astrocyteType "Protoplasmic" ;
+    st:typeProbability 7.172968e-01 .
+
+st:AstrocyteType_59 st:astrocyteType "Reactive" ;
+    st:typeProbability 7.589864e-01 .
+
+st:AstrocyteType_6 st:astrocyteType "Reactive" ;
+    st:typeProbability 7.790594e-01 .
+
+st:AstrocyteType_60 st:astrocyteType "Fibrous" ;
+    st:typeProbability 8.708785e-01 .
+
+st:AstrocyteType_61 st:astrocyteType "Protoplasmic" ;
+    st:typeProbability 9.538526e-01 .
+
+st:AstrocyteType_62 st:astrocyteType "Protoplasmic" ;
+    st:typeProbability 7.368762e-01 .
+
+st:AstrocyteType_63 st:astrocyteType "Reactive" ;
+    st:typeProbability 8.46823e-01 .
+
+st:AstrocyteType_64 st:astrocyteType "Fibrous" ;
+    st:typeProbability 9.794955e-01 .
+
+st:AstrocyteType_65 st:astrocyteType "Fibrous" ;
+    st:typeProbability 7.290743e-01 .
+
+st:AstrocyteType_66 st:astrocyteType "Reactive" ;
+    st:typeProbability 9.11787e-01 .
+
+st:AstrocyteType_67 st:astrocyteType "Reactive" ;
+    st:typeProbability 8.755773e-01 .
+
+st:AstrocyteType_68 st:astrocyteType "Reactive" ;
+    st:typeProbability 9.622077e-01 .
+
+st:AstrocyteType_69 st:astrocyteType "Fibrous" ;
+    st:typeProbability 9.88385e-01 .
+
+st:AstrocyteType_7 st:astrocyteType "Protoplasmic" ;
+    st:typeProbability 7.565269e-01 .
+
+st:AstrocyteType_70 st:astrocyteType "Fibrous" ;
+    st:typeProbability 9.448996e-01 .
+
+st:AstrocyteType_71 st:astrocyteType "Reactive" ;
+    st:typeProbability 8.759851e-01 .
+
+st:AstrocyteType_72 st:astrocyteType "Reactive" ;
+    st:typeProbability 9.277653e-01 .
+
+st:AstrocyteType_73 st:astrocyteType "Reactive" ;
+    st:typeProbability 8.325418e-01 .
+
+st:AstrocyteType_74 st:astrocyteType "Reactive" ;
+    st:typeProbability 9.019248e-01 .
+
+st:AstrocyteType_75 st:astrocyteType "Reactive" ;
+    st:typeProbability 7.881482e-01 .
+
+st:AstrocyteType_76 st:astrocyteType "Reactive" ;
+    st:typeProbability 9.78372e-01 .
+
+st:AstrocyteType_77 st:astrocyteType "Reactive" ;
+    st:typeProbability 7.748344e-01 .
+
+st:AstrocyteType_78 st:astrocyteType "Protoplasmic" ;
+    st:typeProbability 9.071003e-01 .
+
+st:AstrocyteType_79 st:astrocyteType "Fibrous" ;
+    st:typeProbability 8.502358e-01 .
+
+st:AstrocyteType_8 st:astrocyteType "Reactive" ;
+    st:typeProbability 8.98719e-01 .
+
+st:AstrocyteType_80 st:astrocyteType "Fibrous" ;
+    st:typeProbability 7.305575e-01 .
+
+st:AstrocyteType_81 st:astrocyteType "Fibrous" ;
+    st:typeProbability 7.796485e-01 .
+
+st:AstrocyteType_82 st:astrocyteType "Protoplasmic" ;
+    st:typeProbability 7.829898e-01 .
+
+st:AstrocyteType_83 st:astrocyteType "Fibrous" ;
+    st:typeProbability 8.410954e-01 .
+
+st:AstrocyteType_84 st:astrocyteType "Reactive" ;
+    st:typeProbability 8.866632e-01 .
+
+st:AstrocyteType_85 st:astrocyteType "Fibrous" ;
+    st:typeProbability 9.536337e-01 .
+
+st:AstrocyteType_86 st:astrocyteType "Fibrous" ;
+    st:typeProbability 8.908168e-01 .
+
+st:AstrocyteType_87 st:astrocyteType "Fibrous" ;
+    st:typeProbability 9.381957e-01 .
+
+st:AstrocyteType_88 st:astrocyteType "Protoplasmic" ;
+    st:typeProbability 7.686091e-01 .
+
+st:AstrocyteType_89 st:astrocyteType "Protoplasmic" ;
+    st:typeProbability 9.53332e-01 .
+
+st:AstrocyteType_9 st:astrocyteType "Reactive" ;
+    st:typeProbability 8.432441e-01 .
+
+st:AstrocyteType_90 st:astrocyteType "Reactive" ;
+    st:typeProbability 9.244672e-01 .
+
+st:AstrocyteType_91 st:astrocyteType "Reactive" ;
+    st:typeProbability 7.503993e-01 .
+
+st:AstrocyteType_92 st:astrocyteType "Protoplasmic" ;
+    st:typeProbability 7.992007e-01 .
+
+st:AstrocyteType_93 st:astrocyteType "Protoplasmic" ;
+    st:typeProbability 9.168177e-01 .
+
+st:AstrocyteType_94 st:astrocyteType "Fibrous" ;
+    st:typeProbability 8.398719e-01 .
+
+st:AstrocyteType_95 st:astrocyteType "Reactive" ;
+    st:typeProbability 7.360878e-01 .
+
+st:AstrocyteType_96 st:astrocyteType "Fibrous" ;
+    st:typeProbability 8.045407e-01 .
+
+st:AstrocyteType_97 st:astrocyteType "Protoplasmic" ;
+    st:typeProbability 8.47166e-01 .
+
+st:AstrocyteType_98 st:astrocyteType "Protoplasmic" ;
+    st:typeProbability 7.046219e-01 .
+
+st:AstrocyteType_99 st:astrocyteType "Reactive" ;
+    st:typeProbability 9.809851e-01 .
+
+st:SpatialPoint_1 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_1 ;
+    st:hasXCoordinate 3.820832e+01 ;
+    st:hasYCoordinate 3.851944e+01 .
+
+st:SpatialPoint_10 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_10 ;
+    st:hasXCoordinate 3.087835e+01 ;
+    st:hasYCoordinate 2.317975e+01 .
+
+st:SpatialPoint_100 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_100 ;
+    st:hasXCoordinate 6.165569e+01 ;
+    st:hasYCoordinate 6.012998e+01 .
+
+st:SpatialPoint_11 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_11 ;
+    st:hasXCoordinate 3.164735e+01 ;
+    st:hasYCoordinate 2.036056e+01 .
+
+st:SpatialPoint_12 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_12 ;
+    st:hasXCoordinate 3.889439e+01 ;
+    st:hasYCoordinate 7.197628e+01 .
+
+st:SpatialPoint_13 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_13 ;
+    st:hasXCoordinate 9.899277e+00 ;
+    st:hasYCoordinate 1.114164e+01 .
+
+st:SpatialPoint_14 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_14 ;
+    st:hasXCoordinate 6.712561e+01 ;
+    st:hasYCoordinate 1.274453e+01 .
+
+st:SpatialPoint_15 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_15 ;
+    st:hasXCoordinate 1.435322e+01 ;
+    st:hasYCoordinate 9.861609e+00 .
+
+st:SpatialPoint_16 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_16 ;
+    st:hasXCoordinate 8.545958e+01 ;
+    st:hasYCoordinate 5.85963e+01 .
+
+st:SpatialPoint_17 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_17 ;
+    st:hasXCoordinate 6.643142e+01 ;
+    st:hasYCoordinate 3.362638e+01 .
+
+st:SpatialPoint_18 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_18 ;
+    st:hasXCoordinate 4.743165e+01 ;
+    st:hasYCoordinate 8.292983e+01 .
+
+st:SpatialPoint_19 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_19 ;
+    st:hasXCoordinate 5.415797e+01 ;
+    st:hasYCoordinate 9.192938e+01 .
+
+st:SpatialPoint_2 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_2 ;
+    st:hasXCoordinate 4.017349e+01 ;
+    st:hasYCoordinate 4.228068e+01 .
+
+st:SpatialPoint_20 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_20 ;
+    st:hasXCoordinate 8.677055e-01 ;
+    st:hasYCoordinate 6.009577e+01 .
+
+st:SpatialPoint_21 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_21 ;
+    st:hasXCoordinate 4.67586e+01 ;
+    st:hasYCoordinate 6.74089e+01 .
+
+st:SpatialPoint_22 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_22 ;
+    st:hasXCoordinate 1.256674e+01 ;
+    st:hasYCoordinate 3.731929e+01 .
+
+st:SpatialPoint_23 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_23 ;
+    st:hasXCoordinate 6.58184e+01 ;
+    st:hasYCoordinate 4.08294e+01 .
+
+st:SpatialPoint_24 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_24 ;
+    st:hasXCoordinate 8.451684e+01 ;
+    st:hasYCoordinate 6.023731e+01 .
+
+st:SpatialPoint_25 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_25 ;
+    st:hasXCoordinate 6.772487e+01 ;
+    st:hasYCoordinate 9.294619e+01 .
+
+st:SpatialPoint_26 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_26 ;
+    st:hasXCoordinate 1.413066e+00 ;
+    st:hasYCoordinate 8.400746e+01 .
+
+st:SpatialPoint_27 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_27 ;
+    st:hasXCoordinate 6.339095e+01 ;
+    st:hasYCoordinate 8.382316e+01 .
+
+st:SpatialPoint_28 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_28 ;
+    st:hasXCoordinate 1.235072e+01 ;
+    st:hasYCoordinate 9.513849e+01 .
+
+st:SpatialPoint_29 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_29 ;
+    st:hasXCoordinate 7.729412e+00 ;
+    st:hasYCoordinate 6.436549e+01 .
+
+st:SpatialPoint_3 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_3 ;
+    st:hasXCoordinate 9.872956e+01 ;
+    st:hasYCoordinate 5.659507e+01 .
+
+st:SpatialPoint_30 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_30 ;
+    st:hasXCoordinate 4.728422e+01 ;
+    st:hasYCoordinate 6.477565e+01 .
+
+st:SpatialPoint_31 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_31 ;
+    st:hasXCoordinate 1.522667e+01 ;
+    st:hasYCoordinate 4.479528e+00 .
+
+st:SpatialPoint_32 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_32 ;
+    st:hasXCoordinate 7.169996e+01 ;
+    st:hasYCoordinate 8.491651e+01 .
+
+st:SpatialPoint_33 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_33 ;
+    st:hasXCoordinate 9.649056e+01 ;
+    st:hasYCoordinate 3.469002e+01 .
+
+st:SpatialPoint_34 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_34 ;
+    st:hasXCoordinate 2.644599e+01 ;
+    st:hasYCoordinate 3.325092e+00 .
+
+st:SpatialPoint_35 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_35 ;
+    st:hasXCoordinate 2.203985e+01 ;
+    st:hasYCoordinate 1.966784e+01 .
+
+st:SpatialPoint_36 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_36 ;
+    st:hasXCoordinate 4.927643e+01 ;
+    st:hasYCoordinate 9.084734e+01 .
+
+st:SpatialPoint_37 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_37 ;
+    st:hasXCoordinate 2.371294e+01 ;
+    st:hasYCoordinate 9.792986e+01 .
+
+st:SpatialPoint_38 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_38 ;
+    st:hasXCoordinate 3.133919e+01 ;
+    st:hasYCoordinate 8.499255e+01 .
+
+st:SpatialPoint_39 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_39 ;
+    st:hasXCoordinate 5.06871e+00 ;
+    st:hasYCoordinate 5.99323e+00 .
+
+st:SpatialPoint_4 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_4 ;
+    st:hasXCoordinate 2.653861e+01 ;
+    st:hasYCoordinate 7.815236e+01 .
+
+st:SpatialPoint_40 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_40 ;
+    st:hasXCoordinate 1.135524e+01 ;
+    st:hasYCoordinate 6.6262e+01 .
+
+st:SpatialPoint_41 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_41 ;
+    st:hasXCoordinate 3.16868e+00 ;
+    st:hasYCoordinate 5.445762e+01 .
+
+st:SpatialPoint_42 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_42 ;
+    st:hasXCoordinate 5.4224e+01 ;
+    st:hasYCoordinate 5.818093e+01 .
+
+st:SpatialPoint_43 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_43 ;
+    st:hasXCoordinate 4.59185e+01 ;
+    st:hasYCoordinate 3.699278e+01 .
+
+st:SpatialPoint_44 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_44 ;
+    st:hasXCoordinate 4.103478e+01 ;
+    st:hasYCoordinate 3.816238e+01 .
+
+st:SpatialPoint_45 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_45 ;
+    st:hasXCoordinate 7.157125e+01 ;
+    st:hasYCoordinate 4.563054e+01 .
+
+st:SpatialPoint_46 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_46 ;
+    st:hasXCoordinate 1.078249e+01 ;
+    st:hasYCoordinate 4.225492e+01 .
+
+st:SpatialPoint_47 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_47 ;
+    st:hasXCoordinate 1.829579e+01 ;
+    st:hasYCoordinate 3.853563e+01 .
+
+st:SpatialPoint_48 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_48 ;
+    st:hasXCoordinate 5.116699e+01 ;
+    st:hasYCoordinate 6.51549e+01 .
+
+st:SpatialPoint_49 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_49 ;
+    st:hasXCoordinate 4.623177e+01 ;
+    st:hasYCoordinate 1.408098e+01 .
+
+st:SpatialPoint_5 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_5 ;
+    st:hasXCoordinate 4.43537e+01 ;
+    st:hasYCoordinate 9.577358e+01 .
+
+st:SpatialPoint_50 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_50 ;
+    st:hasXCoordinate 9.032521e+01 ;
+    st:hasYCoordinate 7.693122e+01 .
+
+st:SpatialPoint_51 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_51 ;
+    st:hasXCoordinate 3.821926e+01 ;
+    st:hasYCoordinate 5.78864e+01 .
+
+st:SpatialPoint_52 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_52 ;
+    st:hasXCoordinate 4.087995e+01 ;
+    st:hasYCoordinate 3.637264e+01 .
+
+st:SpatialPoint_53 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_53 ;
+    st:hasXCoordinate 7.077185e+00 ;
+    st:hasYCoordinate 7.374747e+01 .
+
+st:SpatialPoint_54 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_54 ;
+    st:hasXCoordinate 7.858782e+01 ;
+    st:hasYCoordinate 3.383319e+01 .
+
+st:SpatialPoint_55 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_55 ;
+    st:hasXCoordinate 6.464341e+00 ;
+    st:hasYCoordinate 7.334585e+01 .
+
+st:SpatialPoint_56 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_56 ;
+    st:hasXCoordinate 6.349853e+01 ;
+    st:hasYCoordinate 7.952779e+01 .
+
+st:SpatialPoint_57 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_57 ;
+    st:hasXCoordinate 8.047707e+01 ;
+    st:hasYCoordinate 2.911087e+01 .
+
+st:SpatialPoint_58 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_58 ;
+    st:hasXCoordinate 5.536085e+01 ;
+    st:hasYCoordinate 4.941578e+01 .
+
+st:SpatialPoint_59 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_59 ;
+    st:hasXCoordinate 6.42671e+01 ;
+    st:hasYCoordinate 8.414625e+00 .
+
+st:SpatialPoint_6 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_6 ;
+    st:hasXCoordinate 4.405478e+01 ;
+    st:hasYCoordinate 7.059979e+01 .
+
+st:SpatialPoint_60 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_60 ;
+    st:hasXCoordinate 8.437899e+01 ;
+    st:hasYCoordinate 5.468216e+01 .
+
+st:SpatialPoint_61 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_61 ;
+    st:hasXCoordinate 3.547611e+00 ;
+    st:hasYCoordinate 5.422836e+01 .
+
+st:SpatialPoint_62 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_62 ;
+    st:hasXCoordinate 8.599656e+01 ;
+    st:hasYCoordinate 4.252774e+01 .
+
+st:SpatialPoint_63 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_63 ;
+    st:hasXCoordinate 2.279609e+01 ;
+    st:hasYCoordinate 5.393001e+01 .
+
+st:SpatialPoint_64 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_64 ;
+    st:hasXCoordinate 1.689897e+01 ;
+    st:hasYCoordinate 4.112414e+01 .
+
+st:SpatialPoint_65 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_65 ;
+    st:hasXCoordinate 9.128468e+01 ;
+    st:hasYCoordinate 1.70976e+01 .
+
+st:SpatialPoint_66 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_66 ;
+    st:hasXCoordinate 1.202065e+01 ;
+    st:hasYCoordinate 6.766815e+01 .
+
+st:SpatialPoint_67 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_67 ;
+    st:hasXCoordinate 3.390516e+01 ;
+    st:hasYCoordinate 2.211951e+01 .
+
+st:SpatialPoint_68 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_68 ;
+    st:hasXCoordinate 1.634968e+01 ;
+    st:hasYCoordinate 8.467587e+01 .
+
+st:SpatialPoint_69 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_69 ;
+    st:hasXCoordinate 6.807031e+01 ;
+    st:hasYCoordinate 7.698013e+00 .
+
+st:SpatialPoint_7 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_7 ;
+    st:hasXCoordinate 6.872798e+01 ;
+    st:hasYCoordinate 8.685406e+01 .
+
+st:SpatialPoint_70 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_70 ;
+    st:hasXCoordinate 3.456048e+01 ;
+    st:hasYCoordinate 2.32893e+01 .
+
+st:SpatialPoint_71 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_71 ;
+    st:hasXCoordinate 3.383233e+01 ;
+    st:hasYCoordinate 2.755111e+01 .
+
+st:SpatialPoint_72 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_72 ;
+    st:hasXCoordinate 7.687426e+01 ;
+    st:hasYCoordinate 9.860058e+01 .
+
+st:SpatialPoint_73 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_73 ;
+    st:hasXCoordinate 2.371905e+01 ;
+    st:hasYCoordinate 1.831425e+01 .
+
+st:SpatialPoint_74 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_74 ;
+    st:hasXCoordinate 4.910328e+01 ;
+    st:hasYCoordinate 8.569457e+01 .
+
+st:SpatialPoint_75 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_75 ;
+    st:hasXCoordinate 1.791536e+01 ;
+    st:hasYCoordinate 3.366209e+01 .
+
+st:SpatialPoint_76 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_76 ;
+    st:hasXCoordinate 8.414342e+01 ;
+    st:hasYCoordinate 9.533766e+01 .
+
+st:SpatialPoint_77 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_77 ;
+    st:hasXCoordinate 7.388068e+00 ;
+    st:hasYCoordinate 5.221772e+01 .
+
+st:SpatialPoint_78 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_78 ;
+    st:hasXCoordinate 6.835194e+01 ;
+    st:hasYCoordinate 1.61438e+00 .
+
+st:SpatialPoint_79 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_79 ;
+    st:hasXCoordinate 2.106657e+01 ;
+    st:hasYCoordinate 8.032301e+01 .
+
+st:SpatialPoint_8 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_8 ;
+    st:hasXCoordinate 9.622463e+01 ;
+    st:hasYCoordinate 1.389927e+01 .
+
+st:SpatialPoint_80 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_80 ;
+    st:hasXCoordinate 1.459277e+00 ;
+    st:hasYCoordinate 9.991835e+00 .
+
+st:SpatialPoint_81 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_81 ;
+    st:hasXCoordinate 1.184986e+01 ;
+    st:hasYCoordinate 5.630732e+01 .
+
+st:SpatialPoint_82 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_82 ;
+    st:hasXCoordinate 5.968864e+01 ;
+    st:hasYCoordinate 2.864897e+01 .
+
+st:SpatialPoint_83 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_83 ;
+    st:hasXCoordinate 2.915915e+01 ;
+    st:hasYCoordinate 1.168726e+00 .
+
+st:SpatialPoint_84 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_84 ;
+    st:hasXCoordinate 8.975271e+01 ;
+    st:hasYCoordinate 7.56616e+01 .
+
+st:SpatialPoint_85 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_85 ;
+    st:hasXCoordinate 4.525535e+01 ;
+    st:hasYCoordinate 9.595017e+01 .
+
+st:SpatialPoint_86 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_86 ;
+    st:hasXCoordinate 8.973338e+01 ;
+    st:hasYCoordinate 1.352763e+01 .
+
+st:SpatialPoint_87 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_87 ;
+    st:hasXCoordinate 1.578418e+01 ;
+    st:hasYCoordinate 1.617974e+01 .
+
+st:SpatialPoint_88 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_88 ;
+    st:hasXCoordinate 3.377041e+01 ;
+    st:hasYCoordinate 8.960805e+01 .
+
+st:SpatialPoint_89 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_89 ;
+    st:hasXCoordinate 6.176819e+01 ;
+    st:hasYCoordinate 9.142512e+01 .
+
+st:SpatialPoint_9 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_9 ;
+    st:hasXCoordinate 9.472679e+01 ;
+    st:hasYCoordinate 3.064439e+01 .
+
+st:SpatialPoint_90 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_90 ;
+    st:hasXCoordinate 7.697523e+01 ;
+    st:hasYCoordinate 1.510155e+01 .
+
+st:SpatialPoint_91 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_91 ;
+    st:hasXCoordinate 4.795684e+00 ;
+    st:hasYCoordinate 7.579939e+01 .
+
+st:SpatialPoint_92 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_92 ;
+    st:hasXCoordinate 7.378248e+01 ;
+    st:hasYCoordinate 4.479072e+01 .
+
+st:SpatialPoint_93 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_93 ;
+    st:hasXCoordinate 4.57795e-01 ;
+    st:hasYCoordinate 4.276754e+01 .
+
+st:SpatialPoint_94 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_94 ;
+    st:hasXCoordinate 3.406962e+01 ;
+    st:hasYCoordinate 5.591173e+01 .
+
+st:SpatialPoint_95 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_95 ;
+    st:hasXCoordinate 8.27354e+01 ;
+    st:hasYCoordinate 3.395966e+01 .
+
+st:SpatialPoint_96 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_96 ;
+    st:hasXCoordinate 8.059198e+01 ;
+    st:hasYCoordinate 2.225874e+01 .
+
+st:SpatialPoint_97 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_97 ;
+    st:hasXCoordinate 5.535134e+01 ;
+    st:hasYCoordinate 2.046333e+01 .
+
+st:SpatialPoint_98 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_98 ;
+    st:hasXCoordinate 6.728642e+01 ;
+    st:hasYCoordinate 9.518606e+01 .
+
+st:SpatialPoint_99 a st:SpatialPoint ;
+    st:hasAstrocyteType st:AstrocyteType_99 ;
+    st:hasXCoordinate 7.209878e+01 ;
+    st:hasYCoordinate 7.099971e+01 .
+
