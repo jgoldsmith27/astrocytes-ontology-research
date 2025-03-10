@@ -1,25 +1,51 @@
-# Ignore large dataset files
-Single_Cell/single_cell_data_cleaned.h5ad
-coexpression_results.h5ad
-
-# Ignore Python cache and temporary files
-__pycache__/
-*.pyc
-*.pyo
-*.log
-*.tmp
-
-# Ignore environment files
-.env
+# Virtual Environment
 venv/
-*.venv
+env/
+.env/
 
-# Ignore Jupyter Notebook checkpoints
-.ipynb_checkpoints/
+# Large data files
+*.h5ad
+*.csv
+*.tsv
+*.h5
+*.zarr
 
-# Ignore system files
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS specific files
 .DS_Store
+._.DS_Store
+._*
 Thumbs.db
 
-# Ignore large files tracked by Git LFS (optional)
-*.h5ad
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Build artifacts
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Logs
+logs/
+*.log
+
+# Local configuration
+.env.local
+.env.development.local
+
+# Generated content that shouldn't be committed
+*.backup 

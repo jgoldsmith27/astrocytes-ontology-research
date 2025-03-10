@@ -1,174 +1,183 @@
-# Astrocyte Ontology Research
+# Astrocytes Ontology Research Project
 
 ## Overview
-This project focuses on integrating spatial transcriptomics and single-cell RNA sequencing data to create a comprehensive ontology for astrocyte research. The primary goal is to enhance our understanding of astrocyte heterogeneity and function through multi-modal data integration and validation.
 
-The project has been refactored to specifically focus on astrocyte cell types, with streamlined components for data processing, integration, visualization, and validation.
+The Astrocytes Ontology Research Project aims to identify various cell types, including astrocytes, in spatial transcriptomics data using co-expression patterns derived from single-cell RNA sequencing. By leveraging both technologies, we can identify whole cells in spatial data where only individual gene expressions are directly measured.
 
-## Project Context
-Astrocytes are a heterogeneous population of glial cells with diverse morphologies, molecular signatures, and functions in the central nervous system. Understanding their diversity requires integrating multiple data modalities, particularly spatial transcriptomics and single-cell RNA sequencing. This project creates a semantic framework to bridge these data types, enabling comprehensive analysis of astrocyte subtypes.
+## Datasets
 
-## Components
+The project works with two main types of data:
 
-### 1. Spatial Data Analysis
-- **Location**: `/Spatial_Data`
-- **Purpose**: Process and analyze spatial transcriptomics data for astrocytes
-- **Features**:
-  - Spatial ontology creation
-  - Astrocyte type classification
-  - Spatial gene expression analysis
-  - Visualization of spatial patterns
+1. **Single-Cell RNA Sequencing Data** (scRNA-seq): Contains gene expression profiles for thousands of individual cells, with cell type annotations. This includes:
+   - Astrocytes (general category): 1,287 cells
+   - Astrocytes1 (subtype): 7,116 cells
+   - Neurons (excitatory and inhibitory): 12,583 cells
+   - Oligodendrocytes: 3,452 cells
+   - Microglia: 1,029 cells
+   - Other cell types present in the brain tissue
 
-### 2. Single-Cell Analysis
-- **Location**: `/Single_Cell`
-- **Purpose**: Process and analyze single-cell RNA sequencing data for astrocytes
-- **Features**:
-  - Single-cell ontology creation
-  - Cell clustering and annotation
-  - Gene expression profiling
-  - Marker gene identification
+2. **Spatial Transcriptomics Data**: Contains spatial coordinates of individual gene expressions without cell type information.
 
-### 3. Ontology Integration
-- **Location**: `/output`
-- **Purpose**: Semantically integrate spatial and single-cell data
-- **Features**:
-  - Bridge ontology creation
-  - Cross-modality entity mapping
-  - Inference rules for knowledge discovery
-  - Advanced SPARQL queries
+## Project Goals
 
-### 4. Integrated Visualization
-- **Location**: `/Spatial_Data/scripts/core/astrocyte_integrated_visualization.py`
-- **Purpose**: Visualize integrated data across modalities
-- **Features**:
-  - Interactive dashboards
-  - Spatial distribution visualization
-  - Gene expression heatmaps
-  - Marker gene spatial mapping
+1. Analyze single-cell data to identify co-expression patterns characteristic of different cell types
+2. Generate SPARQL inference rules based on these patterns
+3. Apply these rules to spatial data to identify whole cells of various types
+4. Visualize and validate the results
 
-### 5. Astrocyte Validation
-- **Location**: `/Spatial_Data/scripts/core/astrocyte_validation.py`
-- **Purpose**: Validate astrocyte cell type classifications
-- **Features**:
-  - Co-expression network analysis
-  - Marker gene enrichment
-  - Spatial validation visualization
-  - Classification accuracy metrics
+## Technical Approach
 
-### 6. Test Suite
-- **Location**: `/tests`
-- **Purpose**: Verify functionality and prevent regressions
-- **Features**:
-  - Unit tests for individual components
-  - Integration tests for cross-component functionality
-  - Regression tests for previously fixed bugs
-  - Organized test runner with filtering options
+Our approach combines semantic web technologies with Python data analysis:
 
-## Script Organization
+1. **Co-expression Analysis**: Identify genes that are reliably co-expressed in specific cell types in the single-cell data
+2. **Rule Generation**: Convert co-expression patterns into SPARQL CONSTRUCT queries
+3. **Cell Identification**: Apply the rules to identify cells in spatial data based on co-localized gene expressions
+4. **Validation**: Filter and validate identified cells based on confidence scores and spatial distribution
 
-The codebase has been reorganized to improve maintainability and focus on astrocyte-specific functionality:
+For more details on why we chose this hybrid approach combining SPARQL/RDF with Python, see our [Architectural Design Document](README_ARCHITECTURE.md).
 
-### Directory Structure
+## Project Structure
+
 ```
 astrocytes-ontology-research/
-├── Single_Cell/
-│   └── scripts/
-│       ├── core/           # Essential single-cell scripts
-│       ├── utils/          # Utility functions for single-cell data
-│       └── legacy/         # Deprecated single-cell scripts
-└── Spatial_Data/
-    └── scripts/
-        ├── core/           # Essential spatial data scripts
-        ├── utils/          # Utility functions for spatial data
-        └── legacy/         # Deprecated spatial data scripts
+├── data/
+│   ├── raw/                   # Original data files
+│   └── processed/             # Processed data files and results
+├── ontologies/
+│   └── cell_type_ontology.ttl # Unified ontology for cell types
+├── scripts/
+│   ├── convert_spatial_to_turtle.py   # Convert spatial data to RDF
+│   ├── generate_coexpression_rules.py # Generate rules from scRNA-seq
+│   ├── generate_meta_rules.py         # Create meta-rules from rule associations
+│   ├── identify_cells.py              # Apply rules to identify cells
+│   ├── conflict_resolution.py         # Resolve conflicts between cells
+│   └── visualize_cells.py             # Visualize identified cells
+├── docs/
+│   ├── README_DOCS.md                # Documentation guide and index
+│   ├── co_expression_rules.md        # Documentation on rule types and usage
+│   ├── methodology.md                # Detailed methodology description
+│   ├── meta_rules.md                 # Documentation on higher-order patterns
+│   ├── parameters.md                 # Reference for all configurable parameters
+│   ├── data_conversion.md            # Documentation on data conversion process
+│   ├── rule_application.md           # Documentation on rule application system
+│   ├── conflict_resolution.md        # Documentation on conflict resolution system
+│   ├── examples.md                   # Examples of rules and applications
+│   ├── user_guide.md                 # Step-by-step guide to using the pipeline
+│   └── todo_list.md                  # Planned improvements and feature roadmap
+├── run_astrocyte_identification.sh   # Main pipeline script
+└── README.md                         # This file
 ```
 
-For more details on the script organization, see [SCRIPTS_ORGANIZATION.md](SCRIPTS_ORGANIZATION.md).
+## Setup
 
-## Human Protein Atlas Collaboration
+### Prerequisites
 
-This research is being conducted in collaboration with the Human Protein Atlas (HPA) project at Karolinska Institute in Stockholm. The HPA is a Swedish-based program initiated in 2003 with the aim to map all human proteins in cells, tissues, and organs using a combination of various omics technologies, including antibody-based imaging, mass spectrometry, and transcriptomics.
+- Python 3.8 or higher
+- Required Python packages (install with `pip install -r requirements.txt`):
+  - rdflib
+  - pandas
+  - numpy
+  - scanpy
+  - matplotlib
+  - networkx
+  - scipy
 
-### Contribution to HPA
-This project specifically contributes to the HPA Brain Atlas section by:
+### Installation
 
-1. **Enhancing astrocyte classification**: Providing more granular classification of astrocyte subtypes based on integrated spatial and molecular data
-2. **Improving spatial mapping**: Creating semantic links between protein expression patterns and spatial locations in brain tissue
-3. **Developing new visualization methods**: Offering novel ways to visualize protein expression in different astrocyte subtypes
-4. **Creating reusable ontologies**: Building semantic frameworks that can be extended to other cell types in the brain
+1. Clone this repository:
+   ```
+   git clone https://github.com/username/astrocytes-ontology-research.git
+   cd astrocytes-ontology-research
+   ```
+
+2. Create and activate a virtual environment:
+   ```
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. Install dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
 
 ## Usage
 
-### Prerequisites
-- Python 3.8+
-- Required packages listed in each component's requirements.txt
+### Running the Complete Pipeline
 
-### Running the Pipeline
+To run the complete pipeline with default settings:
 
-1. **Process spatial data**:
-```bash
-cd Spatial_Data
-python scripts/core/spatial_ontology_builder.py --input data/spatial_data.csv --output output/enhanced_spatial_ontology.ttl
+```
+./run_astrocyte_identification.sh
 ```
 
-2. **Process single-cell data**:
-```bash
-cd Single_Cell
-python scripts/core/single_cell_ontology_builder.py --input data/single_cell_data.csv --output output/single_cell_ontology.ttl
+This will:
+1. Convert spatial data to RDF format
+2. Generate co-expression rules from single-cell data
+3. Generate meta-rules by analyzing rule co-occurrence patterns
+4. Apply the rules to identify cells in spatial data
+5. Resolve conflicts between overlapping cells
+6. Generate visualizations and reports
+
+### Running Individual Steps
+
+You can also run individual scripts with custom parameters. For example:
+
+```
+python scripts/generate_coexpression_rules.py \
+  --input data/raw/CTR081_Fron.h5ad \
+  --output-dir data/processed/rules \
+  --min-expression 0.2 \
+  --min-coexpression 0.6
 ```
 
-3. **Integrate ontologies**:
-```bash
-./run_ontology_integration.sh
-```
+See the [User Guide](docs/user_guide.md) for detailed instructions on running each component.
 
-4. **Run integrated visualization**:
-```bash
-cd Spatial_Data
-python scripts/core/astrocyte_integrated_visualization.py --spatial ../output/integrated_ontology.ttl --single-cell ../output/integrated_ontology.ttl --interactive
-```
+## Documentation
 
-5. **Run astrocyte validation**:
-```bash
-python Spatial_Data/scripts/core/astrocyte_validation.py --input output/integrated_astrocyte_ontology.ttl --output-dir output/astrocyte_validation
-```
+The `docs/` directory contains comprehensive documentation:
 
-6. **Run all in one command**:
-```bash
-./run_astrocyte_integration.sh
-```
+- [Documentation Guide](docs/README_DOCS.md): Overview and index of all documentation
+- [Co-expression Rules Guide](docs/co_expression_rules.md): Explains the different types of rules
+- [Methodology](docs/methodology.md): Detailed explanation of the scientific approach
+- [Meta-Rules](docs/meta_rules.md): Documentation on higher-order co-expression patterns
+- [Parameters Reference](docs/parameters.md): Complete list of configurable parameters
+- [Data Conversion](docs/data_conversion.md): Documentation on the spatial data conversion process
+- [Rule Application](docs/rule_application.md): Documentation on applying rules to identify cells
+- [Conflict Resolution](docs/conflict_resolution.md): Documentation on resolving overlapping cells
+- [Examples](docs/examples.md): Example rules and their application
+- [User Guide](docs/user_guide.md): Step-by-step instructions for using the pipeline
+- [Architectural Design](README_ARCHITECTURE.md): Explanation of our hybrid SPARQL/Python approach
+- [TODO List](docs/todo_list.md): Planned improvements and features
 
-### Running Tests
+## Future Improvements
 
-Run all tests:
-```bash
-python tests/run_tests.py
-```
+Planned enhancements include:
 
-Run specific test types:
-```bash
-python tests/run_tests.py --type unit
-python tests/run_tests.py --type integration
-python tests/run_tests.py --type regression
-```
+- ✅ Implement higher-order co-expression patterns (meta-rules)
+- ✅ Expand to identify multiple cell types beyond astrocytes
+- Implement density-based clustering for improved cell boundary detection
+- Enhance conflict resolution between overlapping cell identifications
+- Optimize parameters for different cell types
+- Add interactive visualization tools
+- Explore machine learning approaches for rule generation
 
-For more details, see the [Test Suite README](tests/README.md).
+See the [TODO List](docs/todo_list.md) for more details.
 
-## Future Directions
+## Results
 
-### Planned Enhancements
-1. **Improved Gene Mapping**: Enhance the gene mapping between spatial and single-cell data to improve validation accuracy.
-2. **Additional Marker Genes**: Incorporate more astrocyte-specific marker genes to better distinguish between subtypes.
-3. **Enhanced Validation Algorithms**: Develop more sophisticated validation methods for astrocyte classification.
-4. **Interactive Visualization Dashboard**: Create a comprehensive dashboard for exploring astrocyte heterogeneity.
-5. **Integration with External Databases**: Connect with additional astrocyte-related databases and resources.
+After running the pipeline, results are available in `data/processed/`:
 
-## Contributors
-- Research team at Karolinska Institute
-- Human Protein Atlas collaborators
+- `rules/`: Generated SPARQL rules
+- `meta_rules/`: Higher-order co-expression patterns
+- `results/identified_cells.csv`: Table of identified cells
+- `results/cell_visualization.png`: Visualization of identified cells
+- `results/conflict_resolution_report.md`: Detailed report on conflict resolution
 
 ## License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgments
-This work is supported by the Human Protein Atlas project at Karolinska Institute, Stockholm, Sweden. 
+
+This research builds upon methods from single-cell transcriptomics and spatial genomics, particularly the work on identifying cell types from gene co-expression patterns. 

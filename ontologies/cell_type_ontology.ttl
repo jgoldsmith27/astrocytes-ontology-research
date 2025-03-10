@@ -1,0 +1,249 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cell: <http://example.org/ontology/cell/> .
+
+# Ontology metadata
+<http://example.org/ontology/cell> rdf:type owl:Ontology ;
+    rdfs:label "Cell Type Spatial Ontology"@en ;
+    rdfs:comment "An ontology for identifying cell types in spatial transcriptomics data"@en .
+
+#------------------------
+# Classes
+#------------------------
+
+# Spatial data classes
+cell:SpatialDataPoint rdf:type owl:Class ;
+    rdfs:label "Spatial Data Point"@en ;
+    rdfs:comment "A point in the spatial transcriptomics dataset representing gene expression at a specific location"@en .
+
+cell:Gene rdf:type owl:Class ;
+    rdfs:label "Gene"@en ;
+    rdfs:comment "A gene that is expressed in the tissue"@en .
+
+cell:SpatialBin rdf:type owl:Class ;
+    rdfs:label "Spatial Bin"@en ;
+    rdfs:comment "A spatial bin or region in the tissue"@en .
+
+# Cell type classes
+cell:CellType rdf:type owl:Class ;
+    rdfs:label "Cell Type"@en ;
+    rdfs:comment "A type or category of cell"@en .
+
+# Astrocyte cell types
+cell:Astrocyte rdf:type owl:Class ;
+    rdfs:subClassOf cell:CellType ;
+    rdfs:label "Astrocyte"@en ;
+    rdfs:comment "General astrocyte cell type"@en .
+
+cell:Astrocyte1 rdf:type owl:Class ;
+    rdfs:subClassOf cell:Astrocyte ;
+    rdfs:label "Astrocyte 1"@en ;
+    rdfs:comment "Astrocyte subtype 1"@en .
+
+# Neuron cell types
+cell:Neuron rdf:type owl:Class ;
+    rdfs:subClassOf cell:CellType ;
+    rdfs:label "Neuron"@en ;
+    rdfs:comment "General neuron cell type"@en .
+
+cell:Excitatory rdf:type owl:Class ;
+    rdfs:subClassOf cell:Neuron ;
+    rdfs:label "Excitatory Neuron"@en ;
+    rdfs:comment "Excitatory neuron cell type"@en .
+
+cell:Inhibitory rdf:type owl:Class ;
+    rdfs:subClassOf cell:Neuron ;
+    rdfs:label "Inhibitory Neuron"@en ;
+    rdfs:comment "Inhibitory neuron cell type"@en .
+
+# Immune cell types
+cell:Microglia rdf:type owl:Class ;
+    rdfs:subClassOf cell:CellType ;
+    rdfs:label "Microglia"@en ;
+    rdfs:comment "Microglia cell type, the resident immune cells of the brain"@en .
+
+# Oligodendrocyte lineage
+cell:Oligodendrocyte rdf:type owl:Class ;
+    rdfs:subClassOf cell:CellType ;
+    rdfs:label "Oligodendrocyte"@en ;
+    rdfs:comment "Oligodendrocyte cell type"@en .
+
+cell:OPC rdf:type owl:Class ;
+    rdfs:subClassOf cell:CellType ;
+    rdfs:label "Oligodendrocyte Precursor Cell"@en ;
+    rdfs:comment "Oligodendrocyte precursor cell (OPC)"@en .
+
+# Vascular cells
+cell:Endothelial rdf:type owl:Class ;
+    rdfs:subClassOf cell:CellType ;
+    rdfs:label "Endothelial Cell"@en ;
+    rdfs:comment "Endothelial cell type, lines blood vessels"@en .
+
+cell:Pericyte rdf:type owl:Class ;
+    rdfs:subClassOf cell:CellType ;
+    rdfs:label "Pericyte"@en ;
+    rdfs:comment "Pericyte cell type, wraps around endothelial cells"@en .
+
+# Co-expression related classes
+cell:SpatialCell rdf:type owl:Class ;
+    rdfs:label "Spatial Cell"@en ;
+    rdfs:comment "A cell identified in spatial data through co-expression patterns"@en .
+
+cell:CoexpressionPattern rdf:type owl:Class ;
+    rdfs:label "Co-expression Pattern"@en ;
+    rdfs:comment "A pattern of gene co-expression characteristic of a cell type"@en .
+
+#------------------------
+# Object Properties
+#------------------------
+
+# Spatial relationships
+cell:expressesGene rdf:type owl:ObjectProperty ;
+    rdfs:label "expresses gene"@en ;
+    rdfs:domain cell:SpatialDataPoint ;
+    rdfs:range cell:Gene ;
+    rdfs:comment "Relates a spatial data point to the gene being expressed"@en .
+
+cell:locatedInBin rdf:type owl:ObjectProperty ;
+    rdfs:label "located in bin"@en ;
+    rdfs:domain cell:SpatialDataPoint ;
+    rdfs:range cell:SpatialBin ;
+    rdfs:comment "Relates a spatial data point to the spatial bin it belongs to"@en .
+
+# Cell type relationships
+cell:hasCellType rdf:type owl:ObjectProperty ;
+    rdfs:label "has cell type"@en ;
+    rdfs:domain cell:SpatialCell ;
+    rdfs:range cell:CellType ;
+    rdfs:comment "Relates a spatial cell to its cell type"@en .
+
+cell:includesSpatialPoint rdf:type owl:ObjectProperty ;
+    rdfs:label "includes spatial point"@en ;
+    rdfs:domain cell:SpatialCell ;
+    rdfs:range cell:SpatialDataPoint ;
+    rdfs:comment "Relates a spatial cell to the spatial points it contains"@en .
+
+cell:hasCoexpressionPattern rdf:type owl:ObjectProperty ;
+    rdfs:label "has co-expression pattern"@en ;
+    rdfs:domain cell:CellType ;
+    rdfs:range cell:CoexpressionPattern ;
+    rdfs:comment "Relates a cell type to its characteristic co-expression pattern"@en .
+
+cell:hasGene rdf:type owl:ObjectProperty ;
+    rdfs:label "has gene"@en ;
+    rdfs:domain cell:CoexpressionPattern ;
+    rdfs:range cell:Gene ;
+    rdfs:comment "Relates a co-expression pattern to a gene"@en .
+
+# Marker gene relationship
+cell:hasMarkerGene rdf:type owl:ObjectProperty ;
+    rdfs:label "has marker gene"@en ;
+    rdfs:domain cell:CellType ;
+    rdfs:range cell:Gene ;
+    rdfs:comment "Relates a cell type to a gene that serves as a marker for that cell type"@en .
+
+# Negative marker relationship
+cell:hasNegativeMarker rdf:type owl:ObjectProperty ;
+    rdfs:label "has negative marker"@en ;
+    rdfs:domain cell:CellType ;
+    rdfs:range cell:Gene ;
+    rdfs:comment "Relates a cell type to a gene that should not be expressed in this cell type"@en .
+
+#------------------------
+# Data Properties
+#------------------------
+
+# Spatial data properties
+cell:hasXCoordinate rdf:type owl:DatatypeProperty ;
+    rdfs:label "has X coordinate"@en ;
+    rdfs:domain cell:SpatialDataPoint ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "The X coordinate of the spatial data point"@en .
+
+cell:hasYCoordinate rdf:type owl:DatatypeProperty ;
+    rdfs:label "has Y coordinate"@en ;
+    rdfs:domain cell:SpatialDataPoint ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "The Y coordinate of the spatial data point"@en .
+
+cell:hasMIDCount rdf:type owl:DatatypeProperty ;
+    rdfs:label "has MID count"@en ;
+    rdfs:domain cell:SpatialDataPoint ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "The molecular identifier count at this spatial location"@en .
+
+cell:hasExonCount rdf:type owl:DatatypeProperty ;
+    rdfs:label "has exon count"@en ;
+    rdfs:domain cell:SpatialDataPoint ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "The exon count at this spatial location"@en .
+
+cell:hasIntronCount rdf:type owl:DatatypeProperty ;
+    rdfs:label "has intron count"@en ;
+    rdfs:domain cell:SpatialDataPoint ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "The intron count at this spatial location"@en .
+
+cell:hasGeneID rdf:type owl:DatatypeProperty ;
+    rdfs:label "has gene ID"@en ;
+    rdfs:domain cell:Gene ;
+    rdfs:range xsd:string ;
+    rdfs:comment "The identifier of the gene"@en .
+
+cell:hasBinID rdf:type owl:DatatypeProperty ;
+    rdfs:label "has bin ID"@en ;
+    rdfs:domain cell:SpatialBin ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "The identifier of the spatial bin"@en .
+
+# Spatial cell properties
+cell:hasX rdf:type owl:DatatypeProperty ;
+    rdfs:label "has X coordinate"@en ;
+    rdfs:domain cell:SpatialCell ;
+    rdfs:range xsd:float ;
+    rdfs:comment "The X coordinate of the center of a spatial cell"@en .
+
+cell:hasY rdf:type owl:DatatypeProperty ;
+    rdfs:label "has Y coordinate"@en ;
+    rdfs:domain cell:SpatialCell ;
+    rdfs:range xsd:float ;
+    rdfs:comment "The Y coordinate of the center of a spatial cell"@en .
+
+cell:hasRadius rdf:type owl:DatatypeProperty ;
+    rdfs:label "has radius"@en ;
+    rdfs:domain cell:SpatialCell ;
+    rdfs:range xsd:float ;
+    rdfs:comment "The radius of a spatial cell"@en .
+
+cell:hasConfidence rdf:type owl:DatatypeProperty ;
+    rdfs:label "has confidence"@en ;
+    rdfs:domain cell:SpatialCell ;
+    rdfs:range xsd:float ;
+    rdfs:comment "The confidence score for a cell identification"@en .
+
+cell:hasCoexpressionProbability rdf:type owl:DatatypeProperty ;
+    rdfs:label "has co-expression probability"@en ;
+    rdfs:domain cell:CoexpressionPattern ;
+    rdfs:range xsd:float ;
+    rdfs:comment "The probability of genes being co-expressed in this pattern"@en .
+
+# Cell-specific properties
+cell:hasExpectedSize rdf:type owl:DatatypeProperty ;
+    rdfs:label "has expected size"@en ;
+    rdfs:domain cell:CellType ;
+    rdfs:range xsd:float ;
+    rdfs:comment "The expected size (diameter in μm) for this cell type"@en .
+
+cell:hasMarkerSpecificity rdf:type owl:DatatypeProperty ;
+    rdfs:label "has marker specificity"@en ;
+    rdfs:domain cell:Gene ;
+    rdfs:range xsd:float ;
+    rdfs:comment "The specificity score for this gene as a marker (0-1)"@en .
+
+cell:derivedFromMetaRule rdf:type owl:DatatypeProperty ;
+    rdfs:label "derived from meta rule"@en ;
+    rdfs:domain cell:SpatialCell ;
+    rdfs:range xsd:boolean ;
+    rdfs:comment "Indicates whether this cell was identified using a meta-rule"@en . 
