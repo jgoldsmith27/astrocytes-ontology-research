@@ -26,6 +26,10 @@ def parse_args():
     parser.add_argument("--top-genes", type=int, default=30, help="Number of top expressed genes to consider for each cell type")
     parser.add_argument("--neg-marker-threshold", type=float, default=0.05, 
                         help="Maximum expression threshold in target type for negative markers")
+    parser.add_argument("--min-clique-size", type=int, default=3,
+                        help="Minimum number of genes in a clique (default: 3)")
+    parser.add_argument("--max-clique-size", type=int, default=None, 
+                        help="Maximum number of genes in a clique. If not specified, will find all cliques up to largest possible size.")
     args = parser.parse_args()
     return args
 
@@ -37,11 +41,11 @@ def load_data(input_file):
 
 def get_cell_type_indices(adata, cell_type):
     """Get indices of cells belonging to a specific cell type."""
-    return np.where(adata.obs['cell_type'] == cell_type)[0]
+    return np.where(adata.obs['celltype'] == cell_type)[0]
 
 def get_available_cell_types(adata):
     """Get list of all available cell types in the dataset."""
-    return adata.obs['cell_type'].unique().tolist()
+    return adata.obs['celltype'].unique().tolist()
 
 def get_binary_expression(adata, cell_indices, min_expression):
     """Convert expression matrix to binary (expressed/not expressed) based on threshold."""
@@ -116,7 +120,7 @@ def identify_negative_markers(adata, target_cell_type, top_genes_per_type=10,
     negative_markers = []
     
     # For each other cell type, find genes that are highly expressed there but not in target
-    for cell_type in adata.obs['cell_type'].unique():
+    for cell_type in adata.obs['celltype'].unique():
         if cell_type == target_cell_type:
             continue
             
@@ -140,11 +144,28 @@ def identify_negative_markers(adata, target_cell_type, top_genes_per_type=10,
     logger.info(f"Identified {len(negative_markers)} negative markers for {target_cell_type}")
     return negative_markers
 
-def find_cliques(G, min_size=3):
-    """Find all cliques (fully connected subgraphs) of minimum size."""
+def find_cliques(G, min_size=3, max_size=None):
+    """
+    Find all cliques (fully connected subgraphs) of specified size range.
+    
+    Parameters:
+        G (networkx.Graph): Graph representing gene co-expression relationships
+        min_size (int): Minimum clique size to return (default: 3)
+        max_size (int, optional): Maximum clique size to return. If None, no upper limit is applied.
+    
+    Returns:
+        list: List of cliques (each clique is a list of node IDs) sorted by size in descending order
+    """
     all_cliques = list(nx.find_cliques(G))
-    large_cliques = [clique for clique in all_cliques if len(clique) >= min_size]
-    return sorted(large_cliques, key=len, reverse=True)
+    
+    if max_size is None:
+        # No upper limit, filter only by minimum size
+        filtered_cliques = [clique for clique in all_cliques if len(clique) >= min_size]
+    else:
+        # Filter by both minimum and maximum size
+        filtered_cliques = [clique for clique in all_cliques if min_size <= len(clique) <= max_size]
+    
+    return sorted(filtered_cliques, key=len, reverse=True)
 
 def generate_clique_rule(clique, cell_type, distance_threshold, negative_markers=None):
     """Generate a SPARQL CONSTRUCT rule for identifying cells based on a gene clique."""
@@ -343,10 +364,10 @@ def get_top_genes(adata, cell_indices, n_top):
     mean_expr = np.mean(adata.X[cell_indices], axis=0)
     
     # Get indices of top genes
-    top_gene_indices = np.argsort(mean_expr)[-n_top:]
+    top_gene_indices = np.argsort(mean_expr.flatten())[-n_top:].tolist()
     
-    # Get gene names
-    gene_names = adata.var_names[top_gene_indices]
+    # Get gene names - convert to strings
+    gene_names = [str(adata.var_names[i]) for i in top_gene_indices]
     
     return gene_names, top_gene_indices
 
@@ -369,9 +390,28 @@ def process_cell_type(adata, cell_type, args, output_dir):
     coexpr_network = calculate_coexpression(binary_matrix, gene_indices, args.min_coexpression)
     logger.info(f"Co-expression network has {coexpr_network.number_of_nodes()} nodes and {coexpr_network.number_of_edges()} edges")
     
-    # Find cliques in the network
-    cliques = find_cliques(coexpr_network, min_size=3)
-    logger.info(f"Found {len(cliques)} cliques of size >= 3")
+    # Find cliques in the network for each size from min_size to max_possible
+    min_clique_size = args.min_clique_size
+    all_cliques = []
+    
+    # Determine maximum clique size to find
+    if args.max_clique_size is not None:
+        # Use user-specified maximum
+        max_clique_size = args.max_clique_size
+        logger.info(f"Using user-specified maximum clique size: {max_clique_size}")
+    else:
+        # Find the largest possible clique in the network
+        largest_cliques = find_cliques(coexpr_network, min_size=min_clique_size)
+        max_clique_size = len(largest_cliques[0]) if largest_cliques else min_clique_size
+        logger.info(f"Found maximum possible clique size: {max_clique_size}")
+    
+    # Generate cliques for each size from min_size to max_size
+    for size in range(min_clique_size, max_clique_size + 1):
+        size_cliques = find_cliques(coexpr_network, min_size=size, max_size=size)
+        logger.info(f"Found {len(size_cliques)} cliques of size exactly {size}")
+        all_cliques.extend(size_cliques)
+    
+    logger.info(f"Found a total of {len(all_cliques)} cliques of sizes {min_clique_size} to {max_clique_size}")
     
     # Identify negative markers for this cell type
     negative_markers = identify_negative_markers(adata, cell_type, 
@@ -380,18 +420,17 @@ def process_cell_type(adata, cell_type, args, output_dir):
     # Generate rules
     rules = []
     
-    # Generate clique rules
-    for clique in cliques:
+    # Generate clique rules for all clique sizes
+    for clique in all_cliques:
         rule = generate_clique_rule(clique, cell_type, args.distance_threshold, negative_markers)
         rules.append(rule)
     
     # Find strong edges not in cliques
     used_edges = set()
-    for clique in cliques:
+    for clique in all_cliques:
         for i, gene_i in enumerate(clique):
             for gene_j in clique[i+1:]:
                 used_edges.add((gene_i, gene_j))
-                used_edges.add((gene_j, gene_i))
     
     # Generate pair rules for strong edges not in cliques
     for u, v, data in coexpr_network.edges(data=True):
@@ -452,7 +491,9 @@ def main():
         f.write(f"- Min co-expression: {args.min_coexpression}\n")
         f.write(f"- Distance threshold: {args.distance_threshold}\n")
         f.write(f"- Top genes: {args.top_genes}\n")
-        f.write(f"- Negative marker threshold: {args.neg_marker_threshold}\n\n")
+        f.write(f"- Negative marker threshold: {args.neg_marker_threshold}\n")
+        f.write(f"- Minimum clique size: {args.min_clique_size}\n")
+        f.write(f"- Maximum clique size: {args.max_clique_size}\n\n")
         f.write(f"## Results\n")
         f.write(f"- Total rules: {total_rules}\n")
         for cell_type in cell_types:

@@ -4,27 +4,6 @@
 
 ### ✅ Implement Higher-Order Co-expression Patterns (Meta-Rules)
 
-**Description:** Develop a system to analyze relationships between existing co-expression patterns and clique rules to create more powerful composite rules for cell identification.
-
-**Implementation Details:**
-- Created `generate_meta_rules.py` that analyzes rule co-occurrence in single-cell data
-- Implemented statistical association detection with lift and Fisher's exact test
-- Generated composite SPARQL rules combining multiple co-expression patterns
-- Added visualization of rule relationships as a network graph
-- Integrated into the pipeline with prioritization during conflict resolution
-
-**Benefits Achieved:**
-- Increased specificity through multi-pattern validation
-- Better distinction between closely related cell types
-- Capturing of complex biological relationships between genes
-- Higher confidence scoring for cells with multiple evidence types
-
-## High Priority
-
-### 1. Implement Density-Based Clustering for Cell Detection
-
-**Description:** Enhance cell detection by implementing density-based clustering (DBSCAN or HDBSCAN) to identify clusters of genes with irregular shapes, improving upon the current center-based approach.
-
 **Implementation Steps:**
 
 1. **Research Phase:**
@@ -59,9 +38,9 @@
 - Reference datasets with known cell boundaries for validation
 - Additional compute resources for more intensive clustering calculations
 
-## Medium Priority
+## High Priority
 
-### 2. Enhance Rule Conflict Resolution
+### 1. Enhance Rule Conflict Resolution
 
 **Description:** Develop a more sophisticated approach for resolving conflicts when multiple cell types are identified in the same region.
 
@@ -70,7 +49,7 @@
 - [ ] Develop a cell type hierarchy based on biological knowledge
 - [ ] Add visualization tools to highlight regions with type conflicts
 
-### 3. Optimize Parameters by Cell Type
+### 2. Optimize Parameters by Cell Type
 
 **Description:** Different cell types may require different parameter settings for optimal detection.
 
@@ -101,7 +80,26 @@
 
 ## Future Directions
 
-### 6. Machine Learning for Rule Generation
+### 6. Implement Density-Based Clustering for Cell Detection
+
+**Description:** Develop a system to analyze relationships between existing co-expression patterns and clique rules to create more powerful composite rules for cell identification.
+
+**Implementation Details:**
+- Created `generate_meta_rules.py` that analyzes rule co-occurrence in single-cell data
+- Implemented statistical association detection with lift and Fisher's exact test
+- Generated composite SPARQL rules combining multiple co-expression patterns
+- Added visualization of rule relationships as a network graph
+- Integrated into the pipeline with prioritization during conflict resolution
+
+**Benefits Achieved:**
+- Increased specificity through multi-pattern validation
+- Better distinction between closely related cell types
+- Capturing of complex biological relationships between genes
+- Higher confidence scoring for cells with multiple evidence types
+
+**Description:** Enhance cell detection by implementing density-based clustering (DBSCAN or HDBSCAN) to identify clusters of genes with irregular shapes, improving upon the current center-based approach.
+
+### 7. Machine Learning for Rule Generation
 
 **Description:** Explore using machine learning to generate and optimize co-expression rules.
 
@@ -109,12 +107,3 @@
 - [ ] Research appropriate ML approaches for this domain
 - [ ] Collect training data from validated cell identifications
 - [ ] Develop a prototype ML-based rule generator
-
-### 7. Integration with Other Data Modalities
-
-**Description:** Integrate with other data types like histology images or proteomics.
-
-**Implementation Steps:**
-- [ ] Research methods for multi-modal data integration
-- [ ] Identify available complementary datasets
-- [ ] Develop proof-of-concept integration pipeline 

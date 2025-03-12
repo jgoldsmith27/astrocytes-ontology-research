@@ -37,10 +37,20 @@ cell:Astrocyte rdf:type owl:Class ;
     rdfs:label "Astrocyte"@en ;
     rdfs:comment "General astrocyte cell type"@en .
 
-cell:Astrocyte1 rdf:type owl:Class ;
+cell:Astrocytes rdf:type owl:Class ;
     rdfs:subClassOf cell:Astrocyte ;
-    rdfs:label "Astrocyte 1"@en ;
+    rdfs:label "Astrocytes"@en ;
+    rdfs:comment "General astrocytes in the dataset"@en .
+
+cell:Astrocytes1 rdf:type owl:Class ;
+    rdfs:subClassOf cell:Astrocyte ;
+    rdfs:label "Astrocytes1"@en ;
     rdfs:comment "Astrocyte subtype 1"@en .
+
+cell:Astrocytes2 rdf:type owl:Class ;
+    rdfs:subClassOf cell:Astrocyte ;
+    rdfs:label "Astrocytes2"@en ;
+    rdfs:comment "Astrocyte subtype 2"@en .
 
 # Neuron cell types
 cell:Neuron rdf:type owl:Class ;
@@ -48,15 +58,30 @@ cell:Neuron rdf:type owl:Class ;
     rdfs:label "Neuron"@en ;
     rdfs:comment "General neuron cell type"@en .
 
+cell:Neurons rdf:type owl:Class ;
+    rdfs:subClassOf cell:Neuron ;
+    rdfs:label "Neurons"@en ;
+    rdfs:comment "General neurons in the dataset"@en .
+
 cell:Excitatory rdf:type owl:Class ;
     rdfs:subClassOf cell:Neuron ;
     rdfs:label "Excitatory Neuron"@en ;
     rdfs:comment "Excitatory neuron cell type"@en .
 
+cell:NeuronsEx rdf:type owl:Class ;
+    rdfs:subClassOf cell:Excitatory ;
+    rdfs:label "Excitatory Neurons"@en ;
+    rdfs:comment "Excitatory neurons in the dataset (neurons_ex)"@en .
+
 cell:Inhibitory rdf:type owl:Class ;
     rdfs:subClassOf cell:Neuron ;
     rdfs:label "Inhibitory Neuron"@en ;
     rdfs:comment "Inhibitory neuron cell type"@en .
+
+cell:NeuronsIn rdf:type owl:Class ;
+    rdfs:subClassOf cell:Inhibitory ;
+    rdfs:label "Inhibitory Neurons"@en ;
+    rdfs:comment "Inhibitory neurons in the dataset (neurons_in)"@en .
 
 # Immune cell types
 cell:Microglia rdf:type owl:Class ;
@@ -64,16 +89,31 @@ cell:Microglia rdf:type owl:Class ;
     rdfs:label "Microglia"@en ;
     rdfs:comment "Microglia cell type, the resident immune cells of the brain"@en .
 
+cell:Lymphocytes rdf:type owl:Class ;
+    rdfs:subClassOf cell:CellType ;
+    rdfs:label "Lymphocytes"@en ;
+    rdfs:comment "Lymphocytes, immune cells"@en .
+
 # Oligodendrocyte lineage
 cell:Oligodendrocyte rdf:type owl:Class ;
     rdfs:subClassOf cell:CellType ;
     rdfs:label "Oligodendrocyte"@en ;
     rdfs:comment "Oligodendrocyte cell type"@en .
 
+cell:Oligodendrocytes rdf:type owl:Class ;
+    rdfs:subClassOf cell:Oligodendrocyte ;
+    rdfs:label "Oligodendrocytes"@en ;
+    rdfs:comment "Oligodendrocytes in the dataset"@en .
+
 cell:OPC rdf:type owl:Class ;
     rdfs:subClassOf cell:CellType ;
     rdfs:label "Oligodendrocyte Precursor Cell"@en ;
     rdfs:comment "Oligodendrocyte precursor cell (OPC)"@en .
+
+cell:OPCs rdf:type owl:Class ;
+    rdfs:subClassOf cell:OPC ;
+    rdfs:label "OPCs"@en ;
+    rdfs:comment "Oligodendrocyte precursor cells in the dataset"@en .
 
 # Vascular cells
 cell:Endothelial rdf:type owl:Class ;
@@ -85,6 +125,38 @@ cell:Pericyte rdf:type owl:Class ;
     rdfs:subClassOf cell:CellType ;
     rdfs:label "Pericyte"@en ;
     rdfs:comment "Pericyte cell type, wraps around endothelial cells"@en .
+
+cell:Pericytes rdf:type owl:Class ;
+    rdfs:subClassOf cell:Pericyte ;
+    rdfs:label "Pericytes"@en ;
+    rdfs:comment "Pericytes in the dataset"@en .
+
+cell:Vasculature rdf:type owl:Class ;
+    rdfs:subClassOf cell:CellType ;
+    rdfs:label "Vasculature"@en ;
+    rdfs:comment "Vascular-related cells"@en .
+
+cell:SMCs rdf:type owl:Class ;
+    rdfs:subClassOf cell:CellType ;
+    rdfs:label "Smooth Muscle Cells"@en ;
+    rdfs:comment "Smooth muscle cells"@en .
+
+# Fibroblast and mesenchymal cells
+cell:Fibroblasts rdf:type owl:Class ;
+    rdfs:subClassOf cell:CellType ;
+    rdfs:label "Fibroblasts"@en ;
+    rdfs:comment "Fibroblast cells"@en .
+
+cell:Mesenchymal rdf:type owl:Class ;
+    rdfs:subClassOf cell:CellType ;
+    rdfs:label "Mesenchymal"@en ;
+    rdfs:comment "Mesenchymal cells"@en .
+
+# Other cell types
+cell:CAMs rdf:type owl:Class ;
+    rdfs:subClassOf cell:CellType ;
+    rdfs:label "CAMs"@en ;
+    rdfs:comment "Cell adhesion molecules expressing cells"@en .
 
 # Co-expression related classes
 cell:SpatialCell rdf:type owl:Class ;

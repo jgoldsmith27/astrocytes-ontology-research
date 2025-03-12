@@ -53,6 +53,9 @@ def create_spatial_rdf(input_file, output_file, limit=None):
     unique_genes = set()
     unique_bins = set()
     
+    # Add a sequential counter for datapoints
+    datapoint_counter = 1
+    
     # Process data in chunks
     row_count = 0
     for chunk_idx, chunk in enumerate(reader):
@@ -67,7 +70,10 @@ def create_spatial_rdf(input_file, output_file, limit=None):
                 break
                 
             # Create URIs for the entities
-            data_point_uri = EX[f"datapoint_{row['Unnamed: 0']}"]
+            # Use sequential counter for datapoint ID instead of original CSV index
+            data_point_uri = EX[f"datapoint_{datapoint_counter}"]
+            datapoint_counter += 1
+            
             gene_id = str(row['geneID'])
             gene_uri = EX[f"gene_{gene_id}"]
             bin_id = int(row['bin1_ID'])
@@ -100,10 +106,12 @@ def create_spatial_rdf(input_file, output_file, limit=None):
             g.add((data_point_uri, CELL.locatedInBin, bin_uri))
             
             row_count += 1
+            
+            # Print progress
+            if row_count % 100000 == 0:
+                print(f"Processed {row_count} data points...")
     
     print(f"Processed {row_count} data points, {len(unique_genes)} unique genes, and {len(unique_bins)} unique bins.")
-    
-    # Write the graph to a TURTLE file
     print(f"Writing RDF to {output_file}...")
     g.serialize(destination=output_file, format="turtle")
     print(f"RDF graph written to {output_file}")
