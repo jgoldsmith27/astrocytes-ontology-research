@@ -1,183 +1,122 @@
-# Astrocytes Ontology Research Project
+# Brain Cell-Cell Interaction Analysis
 
-## Overview
+This repository contains code and analysis results for identifying and characterizing potential sites of cell-cell communication in brain tissue using spatial transcriptomics and single-cell RNA-seq data.
 
-The Astrocytes Ontology Research Project aims to identify various cell types, including astrocytes, in spatial transcriptomics data using co-expression patterns derived from single-cell RNA sequencing. By leveraging both technologies, we can identify whole cells in spatial data where only individual gene expressions are directly measured.
+## Project Overview
 
-## Datasets
+The goal of this project is to identify ligand-receptor interactions in spatial transcriptomic data and predict which cell types are involved in these interactions. We integrate three types of data:
 
-The project works with two main types of data:
+1. **Spatial transcriptomics data**: Gene expression with spatial coordinates
+2. **Single-cell RNA-seq data**: Cell type-specific gene expression profiles
+3. **Ligand-receptor interaction database**: CellChat database of known interactions
 
-1. **Single-Cell RNA Sequencing Data** (scRNA-seq): Contains gene expression profiles for thousands of individual cells, with cell type annotations. This includes:
-   - Astrocytes (general category): 1,287 cells
-   - Astrocytes1 (subtype): 7,116 cells
-   - Neurons (excitatory and inhibitory): 12,583 cells
-   - Oligodendrocytes: 3,452 cells
-   - Microglia: 1,029 cells
-   - Other cell types present in the brain tissue
+## Key Findings
 
-2. **Spatial Transcriptomics Data**: Contains spatial coordinates of individual gene expressions without cell type information.
+- Identified 1,195 potential interaction sites between ligands and receptors
+- Discovered 9 distinct "hotspots" where multiple interactions co-occur
+- Found dominant role of APOE-LRP1 signaling (93% of all detected interactions)
+- Characterized cell type-specific communication patterns, with astrocytes and microglia being central players
 
-## Project Goals
+For detailed findings, see:
+- [Spatial Interaction Summary](spatial_interaction_summary.md)
+- [Spatial Interaction Conclusions](spatial_interaction_conclusions.md)
 
-1. Analyze single-cell data to identify co-expression patterns characteristic of different cell types
-2. Generate SPARQL inference rules based on these patterns
-3. Apply these rules to spatial data to identify whole cells of various types
-4. Visualize and validate the results
-
-## Technical Approach
-
-Our approach combines semantic web technologies with Python data analysis:
-
-1. **Co-expression Analysis**: Identify genes that are reliably co-expressed in specific cell types in the single-cell data
-2. **Rule Generation**: Convert co-expression patterns into SPARQL CONSTRUCT queries
-3. **Cell Identification**: Apply the rules to identify cells in spatial data based on co-localized gene expressions
-4. **Validation**: Filter and validate identified cells based on confidence scores and spatial distribution
-
-For more details on why we chose this hybrid approach combining SPARQL/RDF with Python, see our [Architectural Design Document](README_ARCHITECTURE.md).
-
-## Project Structure
+## Repository Structure
 
 ```
-astrocytes-ontology-research/
-├── data/
-│   ├── raw/                   # Original data files
-│   └── processed/             # Processed data files and results
-├── ontologies/
-│   └── cell_type_ontology.ttl # Unified ontology for cell types
-├── scripts/
-│   ├── convert_spatial_to_turtle.py   # Convert spatial data to RDF
-│   ├── generate_coexpression_rules.py # Generate rules from scRNA-seq
-│   ├── generate_meta_rules.py         # Create meta-rules from rule associations
-│   ├── identify_cells.py              # Apply rules to identify cells
-│   ├── conflict_resolution.py         # Resolve conflicts between cells
-│   └── visualize_cells.py             # Visualize identified cells
-├── docs/
-│   ├── README_DOCS.md                # Documentation guide and index
-│   ├── co_expression_rules.md        # Documentation on rule types and usage
-│   ├── methodology.md                # Detailed methodology description
-│   ├── meta_rules.md                 # Documentation on higher-order patterns
-│   ├── parameters.md                 # Reference for all configurable parameters
-│   ├── data_conversion.md            # Documentation on data conversion process
-│   ├── rule_application.md           # Documentation on rule application system
-│   ├── conflict_resolution.md        # Documentation on conflict resolution system
-│   ├── examples.md                   # Examples of rules and applications
-│   ├── user_guide.md                 # Step-by-step guide to using the pipeline
-│   └── todo_list.md                  # Planned improvements and feature roadmap
-├── run_astrocyte_identification.sh   # Main pipeline script
-└── README.md                         # This file
+/astrocytes-ontology-research/
+├── README.md                         # This file
+├── raw/                              # Raw data
+│   ├── 1996-081_GFM_SS200000954BR_A2_tissue_cleaned_cortex_crop.csv  # Spatial data
+│   └── CTR081_Fron.h5ad              # Single-cell data
+├── cell-chat-data/                   # Ligand-receptor database
+│   ├── CellChatDB.human.rda
+│   └── PPI.human.rda
+├── scripts/                          # Analysis scripts
+│   ├── explore_h5ad.py               # Single-cell data exploration
+│   ├── explore_h5ad_simplified.py    # Simplified script for cell type analysis
+│   ├── analyze_spatial_interactions.py # Spatial proximity analysis
+│   └── integrated_spatial_analysis.py  # Combined analysis script
+├── results/                          # Analysis outputs
+│   ├── cell_type_counts.csv          # Cell type frequencies
+│   ├── interaction_sites.csv         # Identified interaction sites
+│   ├── interaction_cell_types.csv    # Predicted cell types for each interaction
+│   ├── interaction_hotspots.csv      # Clusters of interaction sites
+│   └── hotspot_cell_types.csv        # Cell types involved in each hotspot
+└── visualizations/                   # Generated figures
+    ├── spatial_interactions.png      # Map of interaction sites
+    ├── interaction_heatmap.png       # Density of interactions
+    ├── cell_interaction_patterns.png # Heatmap of cell-cell interactions
+    ├── cell_interaction_network.png  # Circos plot of interactions
+    └── interaction_hotspots.png      # Visualization of interaction clusters
 ```
 
-## Setup
+## Methods
 
-### Prerequisites
+### 1. Spatial Interaction Analysis
 
-- Python 3.8 or higher
-- Required Python packages (install with `pip install -r requirements.txt`):
-  - rdflib
-  - pandas
-  - numpy
-  - scanpy
-  - matplotlib
-  - networkx
-  - scipy
+We identified potential ligand-receptor interaction sites by analyzing the spatial proximity between ligand and receptor gene expressions in the spatial transcriptomic data. We defined interactions as pairs of ligand and receptor expressions that are within 50 spatial units of each other.
 
-### Installation
+### 2. Cell Type Prediction
 
-1. Clone this repository:
-   ```
-   git clone https://github.com/username/astrocytes-ontology-research.git
-   cd astrocytes-ontology-research
-   ```
+For each ligand-receptor pair, we predicted the most likely producing and receiving cell types based on the average expression of the ligand and receptor genes across different cell types in the single-cell RNA-seq data.
 
-2. Create and activate a virtual environment:
-   ```
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
+### 3. Interaction Hotspot Identification
 
-3. Install dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
+We used DBSCAN clustering to identify regions in the tissue with high densities of interaction sites, which we call "hotspots". These hotspots likely represent functional microenvironments with specialized cellular activities.
+
+## Key Interactions
+
+| Interaction | Count | Ligand-Producing Cell | Receptor-Expressing Cell | Biological Significance |
+|-------------|-------|---------------------------|---------------------------|-------------------------|
+| APOE-LRP1 | 1,116 | Astrocytes1 | Mesenchymal cells | Lipid metabolism, amyloid clearance |
+| BDNF-NTRK2 | 26 | Excitatory neurons | Astrocytes1 | Neurotrophic support |
+| VEGFA-FLT1 | 18 | Mesenchymal cells | Endothelial cells | Angiogenesis |
+| CX3CL1-CX3CR1 | 11 | Smooth muscle cells | Microglia | Neuroimmune communication |
+| PDGFB-PDGFRB | 10 | Vasculature | Pericytes | Vascular stability |
 
 ## Usage
 
-### Running the Complete Pipeline
+To reproduce the analysis:
 
-To run the complete pipeline with default settings:
+1. Clone this repository
+2. Set up Python environment with required dependencies:
+   ```
+   pip install scanpy pandas numpy matplotlib seaborn scipy scikit-learn
+   ```
+3. Run the analysis scripts in order:
+   ```
+   python explore_h5ad_simplified.py
+   python analyze_spatial_interactions.py
+   python integrated_spatial_analysis.py
+   ```
 
-```
-./run_astrocyte_identification.sh
-```
+## Dependencies
 
-This will:
-1. Convert spatial data to RDF format
-2. Generate co-expression rules from single-cell data
-3. Generate meta-rules by analyzing rule co-occurrence patterns
-4. Apply the rules to identify cells in spatial data
-5. Resolve conflicts between overlapping cells
-6. Generate visualizations and reports
+- Python 3.7+
+- scanpy
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- scipy
+- scikit-learn
 
-### Running Individual Steps
+## Future Directions
 
-You can also run individual scripts with custom parameters. For example:
-
-```
-python scripts/generate_coexpression_rules.py \
-  --input data/raw/CTR081_Fron.h5ad \
-  --output-dir data/processed/rules \
-  --min-expression 0.2 \
-  --min-coexpression 0.6
-```
-
-See the [User Guide](docs/user_guide.md) for detailed instructions on running each component.
-
-## Documentation
-
-The `docs/` directory contains comprehensive documentation:
-
-- [Documentation Guide](docs/README_DOCS.md): Overview and index of all documentation
-- [Co-expression Rules Guide](docs/co_expression_rules.md): Explains the different types of rules
-- [Methodology](docs/methodology.md): Detailed explanation of the scientific approach
-- [Meta-Rules](docs/meta_rules.md): Documentation on higher-order co-expression patterns
-- [Parameters Reference](docs/parameters.md): Complete list of configurable parameters
-- [Data Conversion](docs/data_conversion.md): Documentation on the spatial data conversion process
-- [Rule Application](docs/rule_application.md): Documentation on applying rules to identify cells
-- [Conflict Resolution](docs/conflict_resolution.md): Documentation on resolving overlapping cells
-- [Examples](docs/examples.md): Example rules and their application
-- [User Guide](docs/user_guide.md): Step-by-step instructions for using the pipeline
-- [Architectural Design](README_ARCHITECTURE.md): Explanation of our hybrid SPARQL/Python approach
-- [TODO List](docs/todo_list.md): Planned improvements and features
-
-## Future Improvements
-
-Planned enhancements include:
-
-- ✅ Implement higher-order co-expression patterns (meta-rules)
-- ✅ Expand to identify multiple cell types beyond astrocytes
-- Implement density-based clustering for improved cell boundary detection
-- Enhance conflict resolution between overlapping cell identifications
-- Optimize parameters for different cell types
-- Add interactive visualization tools
-- Explore machine learning approaches for rule generation
-
-See the [TODO List](docs/todo_list.md) for more details.
-
-## Results
-
-After running the pipeline, results are available in `data/processed/`:
-
-- `rules/`: Generated SPARQL rules
-- `meta_rules/`: Higher-order co-expression patterns
-- `results/identified_cells.csv`: Table of identified cells
-- `results/cell_visualization.png`: Visualization of identified cells
-- `results/conflict_resolution_report.md`: Detailed report on conflict resolution
+1. Expand the analysis to include more ligand-receptor pairs
+2. Apply the method to disease states (e.g., Alzheimer's disease)
+3. Validate key interactions with spatial proteomics methods
+4. Develop a more sophisticated model for predicting interaction probabilities
 
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
+## Contact
+
+For questions or collaborations, please open an issue in this repository.
+
 ## Acknowledgments
 
-This research builds upon methods from single-cell transcriptomics and spatial genomics, particularly the work on identifying cell types from gene co-expression patterns. 
+This project uses the CellChat database for ligand-receptor interactions and builds upon methods from spatial transcriptomics and single-cell RNA-seq analysis. 

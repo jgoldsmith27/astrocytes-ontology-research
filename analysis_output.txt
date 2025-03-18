@@ -1,0 +1,155 @@
+Loading interaction sites data...
+
+Interaction pairs summary:
+pair
+APOE-LRP1        1116
+BDNF-NTRK2         26
+VEGFA-FLT1         18
+CX3CL1-CX3CR1      11
+PDGFB-PDGFRB       10
+TGFB1-TGFBR1        6
+TGFB2-TGFBR1        3
+EGF-EGFR            3
+VEGFA-KDR           2
+Name: count, dtype: int64
+
+Loading single-cell data to get cell type information...
+
+Cell types in the dataset:
+['Astrocytes', 'Astrocytes1', 'Astrocytes2', 'CAMs', 'Endothelial', 'Fibroblasts', 'Lymphocytes', 'Mesenchymal', 'Microglia', 'Neurons', 'OPCs', 'Oligodendrocytes', 'Pericytes', 'SMCs', 'Vasculature', 'neurons_ex', 'neurons_in']
+
+Found 8 unique ligands and 8 unique receptors in interactions
+
+Analyzing gene expression patterns across cell types...
+
+Ligand expression by cell type (first 5 ligands):
+                      APOE     VEGFA     TGFB2     PDGFB    CX3CL1
+Astrocytes1       0.817423  0.414078  0.862130  0.001447  0.010370
+Oligodendrocytes  0.038830  0.004093  0.014806  0.001840  0.004645
+Pericytes         0.357159  0.445139  0.105524  0.016207  0.000000
+Microglia         0.767392  0.054828  0.033040  0.216816  0.004304
+Astrocytes2       0.623763  0.232169  0.561788  0.001877  0.026764
+Endothelial       0.392731  0.084322  0.115866  0.185464  0.011594
+Neurons           0.319578  0.057281  0.130125  0.009811  0.037207
+CAMs              0.600472  0.094966  0.084794  0.165816  0.000000
+Lymphocytes       0.236071  0.085500  0.091407  0.037438  0.000000
+Mesenchymal       0.305272  0.874845  0.476568  0.000000  0.000000
+Fibroblasts       0.176288  0.081918  0.112186  0.000000  0.000000
+SMCs              0.457431  0.153632  0.000000  0.000000  0.239833
+OPCs              0.113545  0.153766  0.043729  0.000000  0.042954
+Astrocytes        0.773206  0.268410  0.732164  0.002035  0.028296
+neurons_ex        0.028630  0.030345  0.062970  0.035157  0.135964
+Vasculature       0.276847  0.044966  0.056989  0.281373  0.066399
+neurons_in        0.026332  0.039305  0.256160  0.009956  0.090724
+
+Receptor expression by cell type (first 5 receptors):
+                     NTRK2    TGFBR1      FLT1       KDR    CX3CR1
+Astrocytes1       3.128064  0.105137  0.020893  0.001136  0.004595
+Oligodendrocytes  0.560766  0.044907  0.005542  0.011828  0.001362
+Pericytes         0.316227  0.186419  0.493430  0.051272  0.008618
+Microglia         0.248372  1.245351  0.043204  0.000945  0.511408
+Astrocytes2       2.583279  0.101787  0.017487  0.003252  0.007172
+Endothelial       0.473478  0.067738  3.786995  0.067444  0.013770
+Neurons           1.814106  0.050076  0.094445  0.000000  0.032497
+CAMs              0.258230  0.832934  0.028269  0.000000  0.071028
+Lymphocytes       0.313225  0.407188  0.000000  0.000000  0.055037
+Mesenchymal       1.014021  0.000000  0.000000  0.000000  0.000000
+Fibroblasts       0.632607  0.295550  0.000000  0.117256  0.020167
+SMCs              0.363370  0.381322  0.000000  0.153632  0.000000
+OPCs              1.851258  0.122052  0.000000  0.000000  0.000000
+Astrocytes        2.915763  0.088708  0.002883  0.000000  0.003353
+neurons_ex        1.863685  0.079095  0.006721  0.001284  0.001356
+Vasculature       0.330301  0.041003  2.557659  0.135061  0.000000
+neurons_in        2.292721  0.077774  0.056500  0.005867  0.001825
+
+Predicting cell types involved in interactions...
+
+Predicted cell types for each ligand-receptor pair:
+            pair ligand_cell_type receptor_cell_type
+0   TGFB1-TGFBR1        Microglia          Microglia
+1   TGFB2-TGFBR1      Astrocytes1          Microglia
+2     BDNF-NTRK2       neurons_ex        Astrocytes1
+3     VEGFA-FLT1      Mesenchymal        Endothelial
+4      VEGFA-KDR      Mesenchymal               SMCs
+5       EGF-EGFR      Astrocytes2         Astrocytes
+6   PDGFB-PDGFRB      Vasculature          Pericytes
+7      APOE-LRP1      Astrocytes1        Mesenchymal
+8  CX3CL1-CX3CR1             SMCs          Microglia
+
+Most common cell-cell interaction patterns:
+  ligand_cell_type receptor_cell_type  count
+0      Astrocytes1        Mesenchymal      1
+1      Astrocytes1          Microglia      1
+2      Astrocytes2         Astrocytes      1
+3      Mesenchymal        Endothelial      1
+4      Mesenchymal               SMCs      1
+5        Microglia          Microglia      1
+6             SMCs          Microglia      1
+7      Vasculature          Pericytes      1
+8       neurons_ex        Astrocytes1      1
+Cell interaction patterns heatmap saved to cell_interaction_patterns.png
+Cell interaction network plot saved to cell_interaction_network.png
+
+Identifying interaction hotspots in the tissue...
+Identified 25 interaction hotspots in the tissue
+Hotspot statistics:
+         interaction_count             x             y   distance
+cluster                                                          
+0                      368   6914.797554   7391.828804  31.553749
+1                       63   6254.920635   9067.420635  26.860534
+2                      131   7657.290076   9296.732824  30.046340
+3                       84   5139.273810   9315.970238  30.308632
+4                        8   9812.687500   9551.000000  22.023173
+5                       60   4491.341667   7990.708333  30.771133
+6                      151   6594.403974  10500.761589  31.558139
+7                        7   8245.928571  10310.642857  24.807801
+8                       29   8977.931034   8083.586207  27.436689
+9                        8   5354.187500  11298.750000  38.718212
+10                       4   7775.125000  10293.375000  25.219755
+11                      21   8629.714286   8793.380952  36.431467
+12                      21   4534.285714   8349.857143  27.917743
+13                       6   6185.500000   8094.833333  29.121022
+14                      10   9713.150000   8679.800000  30.487873
+15                       7   5397.571429   8595.571429  39.523630
+16                       8   4508.312500  10023.187500  37.979748
+17                       6  10078.000000   8912.250000  26.634231
+18                      12   5907.583333   8354.625000  34.677079
+19                      14   5115.214286  10158.714286  33.404689
+20                       6   4614.416667   9726.416667  29.322963
+21                      17   8135.294118   8475.647059  27.396617
+22                       9   8762.722222  10037.000000  31.992887
+23                       8   8912.062500   6359.312500  37.260001
+24                       7  10074.142857   8250.571429  40.026539
+Interaction hotspots visualization saved to interaction_hotspots.png
+
+Hotspot cell type analysis:
+    cluster_id  ...                                         cell_types
+0            0  ...  Endothelial, neurons_ex, Astrocytes1, Vasculat...
+1            1  ...  Endothelial, neurons_ex, Astrocytes1, Mesenchy...
+2            2  ...  Endothelial, neurons_ex, Astrocytes1, Vasculat...
+3            3  ...  neurons_ex, Astrocytes1, SMCs, Mesenchymal, Mi...
+4            4  ...  Astrocytes1, neurons_ex, Mesenchymal, Endothelial
+5            5  ...  Astrocytes1, neurons_ex, Mesenchymal, Endothelial
+6            6  ...  Endothelial, Astrocytes2, neurons_ex, Astrocyt...
+7            7  ...               Astrocytes1, neurons_ex, Mesenchymal
+8            8  ...  Astrocytes1, neurons_ex, Mesenchymal, Endothelial
+9            9  ...              Astrocytes1, Mesenchymal, Endothelial
+10          10  ...         Astrocytes1, neurons_ex, SMCs, Mesenchymal
+11          11  ...                     Astrocytes1, SMCs, Mesenchymal
+12          12  ...   Astrocytes1, Vasculature, Pericytes, Mesenchymal
+13          13  ...                           Astrocytes1, Mesenchymal
+14          14  ...                           Astrocytes1, Mesenchymal
+15          15  ...                           Astrocytes1, Mesenchymal
+16          16  ...               Astrocytes1, neurons_ex, Mesenchymal
+17          17  ...   Astrocytes1, Vasculature, Pericytes, Mesenchymal
+18          18  ...  neurons_ex, Astrocytes1, SMCs, Mesenchymal, Mi...
+19          19  ...                           Astrocytes1, Mesenchymal
+20          20  ...                           Astrocytes1, Mesenchymal
+21          21  ...                           Astrocytes1, Mesenchymal
+22          22  ...                           Astrocytes1, Mesenchymal
+23          23  ...                           Astrocytes1, Mesenchymal
+24          24  ...                           Astrocytes1, Mesenchymal
+
+[25 rows x 3 columns]
+
+Integrated spatial analysis completed successfully!
