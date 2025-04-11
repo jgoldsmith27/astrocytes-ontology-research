@@ -1,8 +1,0 @@
-===== CellChatDB.human Summary =====
-[1] "interaction" "complex"     "cofactor"    "geneInfo"   
-
-Total interactions: 1939 
-Interaction columns: interaction_name pathway_name ligand receptor agonist antagonist co_A_receptor co_I_receptor evidence annotation interaction_name_2 
-
-===== PPI.human Summary =====
-NULL
